@@ -64,45 +64,87 @@ export default function HomePage() {
     <div>
       <div
         className='w-full bg-white dark:bg-black'>
-        <div className="flex justify-center gap-64 items-center w-full px-12">
-          <div className="max-w-2xl flex-shrink-0 min-w-[600px]">
-            <h1 className="[font-family:var(--font-bebas-neue)] relative bottom-28 text-6xl">
+        <div className="flex flex-col items-center w-full justify-center
+        xl:flex 
+        2xl:gap-64 
+        2xl:px-12
+        xl:flex-row 
+        ">
+          <div className="
+          p-5 2xl:p-0 
+          mr-0 2xl:mr-28
+          max-w-9xl 2xl:min-w-[600px] 
+          xl:order-2">
+            <h1 className="[font-family:var(--font-bebas-neue)] relative top-5 pb-12
+              text-6xl
+              xl:hidden">
               R<span className='text-blue-500'>IE</span>L WEB
             </h1>
-            <Image 
-              className='dark:invert-100 w-[37rem] ml-24'
-              src={Image1} 
-              alt="Two people chit-chatting"
-            />
-          </div>
-          <div className="max-w-9xl mr-28">
-            <p className="text-9xl mt-48 tracking-widest">Simplify</p>
+            <p className=" tracking-widest
+            sm:text-8xl 2xl:text-9xl 
+            mt-12 2xl:mt-48 
+            text-6xl
+            text-center 2xl:text-left
+            ">Simplify</p>
             <div className='relative'>
-              <p className="text-9xl mt-4 z-10 relative text-wh tracking-widest">Succeed</p>
+              <p className="relative tracking-widest z-10 mt-3
+              text-6xl sm:text-8xl 2xl:text-9xl 
+              text-center 2xl:text-left
+              ">Succeed</p>
               <Image 
-              className=' w-[36rem] absolute -top-5 z-0'
+             className="absolute -top-5 z-0 
+             max-w-[18rem] 
+             sm:max-w-[28rem] 
+             2xl:max-w-[36rem]
+             sm:left-15 2xl:left-0
+             w-[clamp(63vm, 80vm)] 
+             left-[clamp(0rem,12vw,3rem)]"
               src={Image2} 
               alt="Blue Drawn Design"
               />
             </div>
-            <p className="text-xl font-bold pt-10 pb-16">
+            <p className="font-bold pt-10 pb-16 break-words
+              px-2 2xl:px-0 
+              sm:text-2xl 2xl:text-xl
+              lg:whitespace-nowrap lg:overflow-visible
+              ">
               Empowering your business with smart solutions.
             </p>
-            <Link 
+            <div className='text-center 2xl:text-left mb-15 2xl:mb-0'>
+              <Link 
               style={{ backgroundColor: "#127ddd" }} 
               className="bg-blue-500 px-6 py-3 rounded-full font-extrabold" 
               href="#about">More Information
-            </Link>
-            <div className='mt-[21.25rem]'/>
+              </Link>
+            </div>
+            <div className='2xl:mt-[21.25rem]'/>
+          </div>
+          <div className="max-w-2xl flex-shrink-0 
+            xl:min-w-[600px] 
+            xl:order-1">
+            <h1 className="[font-family:var(--font-bebas-neue)] relative
+              xl:-bottom-12 2xl:bottom-18 
+              xl:left-12 2xl:left-28
+              text-6xl
+              hidden xl:block">
+              R<span className='text-blue-500'>IE</span>L WEB
+            </h1>
+            <Image
+              className="w-full mx-auto dark:invert-100
+              w-[clamp(16rem, 60vw, 40rem)]
+              2xl:ml-24"
+              src={Image1} 
+              alt="Two people chit-chatting"
+            />
           </div>
         </div>
       </div>
-
-      <div 
+ 
+     <div 
         id="about"
         style={{ backgroundColor: "#38b6ff" }}
         className='relative w-full min-h-aut flex items-center justify-center'>
-        <div className="flex justify-center gap-72 items-center w-full px-12">
+        <div className="md:flex justify-center gap-72 items-center w-full px-12">
           <div className="max-w-2xl relative">
             <div className='mt-48'/>
             <p className="text-8xl mt-4 font-bold">About</p>
@@ -120,8 +162,8 @@ export default function HomePage() {
             <Link style={{ backgroundColor: "#127ddd" }}  className="px-7 py-4 rounded-full font-extrabold text-lg" href="#offer">Our Offers</Link>
             <div className='mt-[12.45rem]'/>
           </div>
-          <div className="relative max-w-2xl ">
-            <Image className='min-w-[600px] flex-shrink-0 relative z-10 dark:invert-100 mr-24 w-full'
+          <div className="relative max-w-2xl w-35 md:w-[600px] flex-shrink-0 ">
+            <Image className='relative z-10 dark:invert-100 mr-24 w-full'
              src={Image3} alt="Two people chit-chatting"></Image>
             <Image className='absolute z-0 left-0 bottom-0 dark:invert-100 w-full'
              src={Image9} alt="White shaped Background"></Image>
@@ -131,14 +173,14 @@ export default function HomePage() {
 
       <div id="offer"
         className='w-full min-h-auto bg-neutral-100 dark:bg-neutral-950 items-center justify-center'>
-        <div className="flex justify-center gap-[17rem] items-center w-full px-12 pt-16">
+        <div className="block md:flex justify-center gap-[17rem] items-center w-full px-12 pt-16">
           <div className="max-w-2xl">
             <h2 className="text-8xl font-semibold">What we offer:</h2>
           </div>
           <div className='ml-[45rem]'></div>
         </div>
         <div className='mt-5'/>
-        <div className="flex justify-center gap-10 items-center w-full px-12">
+        <div className="block md:flex justify-center gap-10 items-center w-full px-12">
           <div className="relative max-w-lg border-2 rounded-2xl">
              <Image className='dark:invert-100 w-full'
              src={Image4} alt="Two people having a conversation at a table"></Image>
@@ -170,7 +212,7 @@ export default function HomePage() {
 
       <div id="info"
         className='w-full min-h-auto items-center justify-center'>
-        <div className="flex justify-center gap-[27.5rem] items-center w-full px-12 pt-16">
+        <div className="block md:flex justify-center gap-[27.5rem] items-center w-full px-12 pt-16">
           <div className="max-w-2xl relative">
             <h2 className="text-8xl font-semibold mb-4 z-10 relative">More Info:</h2>
             <Image className='w-[36rem] absolute -top-5 z-0'
@@ -179,7 +221,7 @@ export default function HomePage() {
           <div className='ml-[45rem]'></div>
         </div>
         <div className='mt-20'/>
-        <div className="flex justify-center gap-10 items-center w-full px-12">
+        <div className="block md:flex justify-center gap-10 items-center w-full px-12">
           <div className="max-w-lg border-2 rounded-2xl h-[34.5rem] px-7 py-4">
               <p className="text-3xl font-semibold mt-4 h-40">Custom web platform streamline operations.</p>
               <p className="text-2xl h-60">
@@ -226,7 +268,7 @@ export default function HomePage() {
         id="contact"
         style={{ backgroundColor: "#38b6ff" }}
         className='relative w-full min-h-aut flex items-center justify-center'>
-        <div className="flex justify-center gap-72 items-center w-full px-12 mt-6">
+        <div className="block md:flex justify-center gap-72 items-center w-full px-12 mt-6">
           <div className="max-w-9xl p-12">
             <div className="relative max-w-9xl bg-white dark:bg-black p-12 rounded-3xl mb-20">
               <p className="text-8xl font-bold mb-12">Contact</p>
@@ -246,7 +288,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="max-w-2xl pr-12">
-            <Image className='invert-100 w-full flex-shrink-0 min-w-[600px]'
+            <Image className='invert-100 flex-shrink-0 w-35 md:w-[600px]'
              src={Image7} alt="Two people chit-chatting"></Image>
              <div className='text-center'>
                 <p className='w-[28rem] mx-auto mt-4 mb-4'><i className='text-xl'>We’re dedicated to growing your store’s success
@@ -254,7 +296,7 @@ export default function HomePage() {
              </div>
           </div>
         </div>
-      </div>
+      </div> 
     </div>
   )
 }
