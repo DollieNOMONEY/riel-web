@@ -32,7 +32,7 @@ export default function Slide5() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Facebook"
-                  className="text-neutral-900 hover:text-neutral-500 transition-colors"
+                  className="text-neutral-900 dark:text-neutral-100 hover:text-neutral-500 transition-colors"
                 >
                   <FontAwesomeIcon icon={faFacebookF} className="text-3xl" />
                 </a>
@@ -41,7 +41,7 @@ export default function Slide5() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Instagram"
-                  className="text-neutral-900 hover:text-neutral-500 transition-colors"
+                  className="text-neutral-900 dark:text-neutral-100 hover:text-neutral-500 transition-colors"
                 >
                   <FontAwesomeIcon icon={faInstagram} className="text-3xl" />
                 </a>
