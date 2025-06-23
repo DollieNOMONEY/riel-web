@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
+// import Link from 'next/link'
 
 import Image10 from '@/img/pic 10.png'
 import Image7 from '@/img/pic 7.png'

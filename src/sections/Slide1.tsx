@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 import Container from '@/components/Container'
 import Image1 from '@/img/pic 1.png'
-import Image2 from '@/img/pic 2.png'
+// import Image2 from '@/img/pic 2.png'
 
 
 export default function Slide1() {

@@ -2,10 +2,10 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import Image4 from '@/img/pic 4.png'
-import Image5 from '@/img/pic 5.png'
-import Image6 from '@/img/pic 6.png'
-import Image8 from '@/img/pic 8.png'
+// import Image4 from '@/img/pic 4.png'
+// import Image5 from '@/img/pic 5.png'
+// import Image6 from '@/img/pic 6.png'
+// import Image8 from '@/img/pic 8.png'
 // import Container from '@/components/Container'
 
 export default function Slide4() {
