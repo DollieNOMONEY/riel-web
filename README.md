@@ -1,6 +1,6 @@
 # RIEL Web
 
-**RIEL Web** is a landing page made for Riel agency (as of now). The app features a slide-like web, sleek UI and fast, responsive front-end powered by Next.js and Tailwind CSS.
+**RIEL Web** is a portfolio web site made for Riel agency (as of now). The app features a slide-like web, sleek UI and fast, responsive front-end powered by Next.js and Tailwind CSS.
 
 ---
 

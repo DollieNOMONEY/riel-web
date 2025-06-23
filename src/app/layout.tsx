@@ -20,7 +20,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Riel Web App",
-  description: "Landing page for Riel",
+  description: "Portfolio website for Riel",
 };
 
 export default function RootLayout({
