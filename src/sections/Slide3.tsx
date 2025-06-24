@@ -5,7 +5,7 @@ import Link from 'next/link'
 import Image4 from '@/img/pic 4.png'
 import Image5 from '@/img/pic 5.png'
 import Image6 from '@/img/pic 6.png'
-// import Image10 from '@/img/pic 10.png'
+import Image10 from '@/img/pic 10.png'
 
 export default function Slide3() {
   return (
@@ -33,14 +33,24 @@ export default function Slide3() {
           mb-5 xl:mb-0">
              <Image className='dark:invert-100 w-full'
              src={Image4} alt="Two people having a conversation at a table"></Image>
-             <p className="relative z-10 break-words font-bold mb-14 mx-14
-                text-xl sm:text-2xl 2xl:text-3xl 
-                ">
-                  Custom web platform streamline operations.
+             <div className="relative inline-block mx-auto text-center">
+              <p className="relative z-10 break-words font-bold mb-14 px-6
+                text-xl sm:text-2xl 2xl:text-3xl">
+                Custom web platform streamline operations.
               </p>
 
-            {/* <Image className='w-[36rem] absolute top-[17rem] -left-32 z-0'
-             src={Image10} alt="Blue Drawn Design"></Image> */}
+              <Image
+                className="
+                  absolute z-0 left-1/2 top-4
+                  -translate-x-1/2 -translate-y-1/2
+                  w-[100%] max-w-[300px] sm:max-w-[400px] 2xl:max-w-[500px]
+                  pointer-events-none
+                "
+                src={Image10}
+                alt="Blue Drawn Design"
+              />
+            </div>
+
           </div>
 
           <div className="relative xl:max-w-xs 2xl:max-w-md border-2 rounded-2xl 
@@ -48,13 +58,23 @@ export default function Slide3() {
           mb-5 xl:mb-0">
             <Image className='dark:invert-100 w-full'
              src={Image5} alt="Two hands from top to bottom holding a dialogue, a newspaper, step by step"></Image>
-             <p className="relative z-10 break-words font-bold mb-14 mx-14
-                text-xl sm:text-2xl 2xl:text-3xl
-                ">
-                  Business tracking helping you track every step to business success.
+             <div className="relative inline-block mx-auto text-center">
+              <p className="relative z-10 break-words font-bold mb-14 px-6
+                text-xl sm:text-2xl 2xl:text-3xl">
+                 Business tracking helping you track every step to business success.
               </p>
-            {/* <Image className='w-[36rem] pointer-events-none absolute top-[17rem] -left-32 z-0 rotate-180'
-             src={Image10} alt="Blue Drawn Design"></Image> */}
+
+              <Image
+                className="rotate-180
+                  absolute z-0 left-1/2 top-4
+                  -translate-x-1/2 -translate-y-1/2
+                  w-[100%] max-w-[300px] sm:max-w-[400px] 2xl:max-w-[500px]
+                  pointer-events-none
+                "
+                src={Image10}
+                alt="Blue Drawn Design"
+              />
+            </div>
           </div>
 
 
@@ -63,13 +83,23 @@ export default function Slide3() {
           mb-5 xl:mb-0">
             <Image className='dark:invert-100 w-full'
              src={Image6} alt="Three peopple doing their own thing"></Image>
-             <p className="relative z-10 break-words font-bold mb-14 mx-14
-                text-xl sm:text-2xl 2xl:text-3xl
-                ">
-                  Marketing, design, where strategy meets style — Track and Grow.
+             <div className="relative inline-block mx-auto text-center">
+              <p className="relative z-10 break-words font-bold mb-14 px-6
+                text-xl sm:text-2xl 2xl:text-3xl">
+                Marketing, design, where strategy meets style — Track and Grow.
               </p>
-            {/* <Image className='w-[36rem] absolute top-[17rem] -left-32 z-0'
-             src={Image10} alt="Blue Drawn Design"></Image> */}
+
+              <Image
+                className="
+                  absolute z-0 left-1/2 top-4
+                  -translate-x-1/2 -translate-y-1/2
+                  w-[100%] max-w-[300px] sm:max-w-[400px] 2xl:max-w-[500px]
+                  pointer-events-none
+                "
+                src={Image10}
+                alt="Blue Drawn Design"
+              />
+            </div>
           </div>
         </div>
 

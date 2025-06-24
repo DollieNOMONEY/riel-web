@@ -1,31 +1,29 @@
 import React from 'react'
-// import Image from 'next/image'
+import Image from 'next/image'
 import Link from 'next/link'
 
-// import Image4 from '@/img/pic 4.png'
-// import Image5 from '@/img/pic 5.png'
-// import Image6 from '@/img/pic 6.png'
-// import Image8 from '@/img/pic 8.png'
-// import Container from '@/components/Container'
+import Image8 from '@/img/pic 8.png'
 
 export default function Slide4() {
   return (
     <div id="info"
         className='w-full min-h-auto bg-neutral-200 dark:bg-neutral-950 items-center justify-center'>
-        
-        {/* <div className="block md:flex justify-center gap-[27.5rem] items-center w-full px-12 pt-16">
-          <div className="max-w-2xl relative">
-            <h2 className="text-8xl font-semibold mb-4 z-10 relative">More Info:</h2>
-            <Image className='w-[36rem] absolute -top-5 z-0'
-             src={Image8} alt="Pink Drawn Design"></Image>
-          </div>
-          <div className='ml-[45rem]'></div>
-        </div> */}
 
         <div className="flex flex-col xl:flex-row justify-center xl:gap-[17rem] items-center w-full px-12 pt-16">
-          <div className="max-w-2xl">
-            <h2 className="font-semibold
-                text-6xl md:text-7xl 2xl:text-8xl 
+          <div className="max-w-2xl relative">
+            <Image 
+             className="absolute z-0 
+             left-1/2 top-4 2xl:top-14
+             -translate-x-1/2 -translate-y-1/2
+             max-w-[18rem] 
+             sm:max-w-[28rem] 
+             2xl:max-w-[36rem]
+             w-[clamp(63vm, 80vm)]"
+              src={Image8} 
+              alt="Blue Drawn Design"
+            />
+            <h2 className="font-semibold z-10 relative
+                 text-4xl sm:text-6xl md:text-7xl 2xl:text-8xl 
                 text-center
                 ">More Info:
                 {/* xl:whitespace-nowrap xl:overflow-visible bg-amber-50 */}

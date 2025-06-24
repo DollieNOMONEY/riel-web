@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 import Container from '@/components/Container'
 import Image1 from '@/img/pic 1.png'
-// import Image2 from '@/img/pic 2.png'
+import Image2 from '@/img/pic 2.png'
 
 
 export default function Slide1() {
@@ -32,17 +32,17 @@ export default function Slide1() {
               text-6xl sm:text-8xl 2xl:text-9xl 
               text-center 2xl:text-left
               ">Succeed</p>
-              {/* <Image 
-             className="absolute -top-5 z-0 
+              <Image 
+             className="absolute  z-0 
+             left-1/2 top-8 2xl:top-14
+             -translate-x-1/2 -translate-y-1/2
              max-w-[18rem] 
              sm:max-w-[28rem] 
              2xl:max-w-[36rem]
-             sm:left-15 2xl:left-0
-             w-[clamp(63vm, 80vm)] 
-             left-[clamp(0rem,12vw,3rem)]"
+             w-[clamp(63vm, 80vm)]"
               src={Image2} 
               alt="Blue Drawn Design"
-              /> */}
+              />
             </div>
             <p className="font-bold pt-10 pb-16 break-words
               px-2 2xl:px-0 

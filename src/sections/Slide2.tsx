@@ -5,6 +5,7 @@ import Link from 'next/link'
 import Container from '@/components/Container'
 import Image3 from '@/img/pic 3.png'
 import Image9 from '@/img/pic 9.png'
+import Image11 from '@/img/pic 11.png'
 
 export default function Slide2() {
   return (
@@ -21,24 +22,25 @@ export default function Slide2() {
                 sm:text-8xl 2xl:text-8xl 
                 text-center xl:text-left
                 ">About</p>
-                <p className="font-bold mb-12 xl:mb-12 2xl:mb-28 relative z-10 mt-4 
-                text-6xl
-                sm:text-8xl 2xl:text-8xl 
-                text-center xl:text-left
-                ">Riel.</p>
-                {/* <Image 
-                className="absolute top-20 z-0 
-                max-w-[18rem] 
-                sm:max-w-[28rem] 
-                2xl:max-w-[36rem]
-                sm:left-15 2xl:left-0
-                w-[clamp(63vm, 80vm)] 
-                left-[clamp(0rem,12vw,3rem)]"
-                src={Image11} 
-                alt="Blue Drawn Design"
-                /> */}
-                {/* <Image className='flex-shrink-0 min-w-[600px] dark:invert-100 w-[36rem] absolute top-[7rem] -left-48 z-0'
-                src={Image11} alt="White Drawn Design"></Image>  */}
+                <div className='relative'>
+                  <p className="font-bold mb-12 xl:mb-12 2xl:mb-28 relative z-10 mt-4 
+                  text-6xl
+                  sm:text-8xl 2xl:text-8xl 
+                  text-center xl:text-left
+                  ">Riel.</p>
+                  <Image 
+                  className="absolute z-0 
+                  left-1/2 top-1/1
+                  xl:top-16 xl:left-28
+                 -translate-x-1/2 -translate-y-1/2
+                  max-w-[18rem] 
+                  sm:max-w-[28rem] 
+                  2xl:max-w-[30rem]    
+                  "
+                  src={Image11} 
+                  alt="Blue Drawn Design"
+                  />
+                </div>
                 <p className="break-words
                 sm:text-2xl 2xl:text-2xl 
                 ">
