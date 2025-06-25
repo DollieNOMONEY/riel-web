@@ -16,7 +16,7 @@ export default function Slide5() {
         className='relative w-full overflow-x-hidden min-h-auto flex items-center justify-center'>
         <div className="flex flex-col xl:flex-row justify-center xl:gap-12 2xl:gap-20 items-center w-full px-12 mt-6">
           <div className="max-w-8xl p-[4.5rem]">
-            <div className="relative max-w-screen-xl bg-white dark:bg-black p-12 rounded-3xl mb-20">
+            <div className="relative max-w-screen-xl bg-white p-12 rounded-3xl mb-20">
               <p className="font-bold text-left
                 text-6xl
                 sm:text-8xl xl:text-8xl 
@@ -45,7 +45,7 @@ export default function Slide5() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Facebook"
-                  className="text-neutral-900 dark:text-neutral-100 hover:text-neutral-500 transition-colors"
+                  className="text-neutral-900 hover:text-neutral-500 transition-colors"
                 >
                   <FontAwesomeIcon icon={faFacebookF} className="text-3xl" />
                 </a>
@@ -54,7 +54,7 @@ export default function Slide5() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Instagram" 
-                  className="text-neutral-900 dark:text-neutral-100 hover:text-neutral-500 transition-colors"
+                  className="text-neutral-900 hover:text-neutral-500 transition-colors"
                 >
                   <FontAwesomeIcon icon={faInstagram} className="text-3xl" />
                 </a>
@@ -64,11 +64,13 @@ export default function Slide5() {
             <div className='mb-8 xl:mb-36'/>
             <div className="flex flex-col xl:flex-row gap-2 xl:gap-24 max-w-screen-xl border-2 p-8 rounded-3xl mb-8">
               <p className="text-2xl xl:text-3xl">Telegram</p>
-              <p className="text-2xl xl:text-3xl font-bold">+855 (0)78799009</p>
+              <a className="text-2xl xl:text-3xl font-bold" target="_blank" rel="noopener noreferrer" href="https://t.me/+85578799009">+855 (0)78799009</a>
             </div>
             <div className="flex flex-col xl:flex-row gap-2 xl:gap-[8.5rem] max-w-screen-xl border-2 p-8 rounded-3xl xl:mb-[5.5rem]">
               <p className="text-2xl xl:text-3xl">E-mail</p>
-              <p className="text-2xl xl:text-3xl font-bold ">rielweb2@gmail.com</p>
+              <a className="text-2xl xl:text-3xl font-bold"
+              href="mailto:rielweb2@gmail.com?subject=Interest%20in%20a%20Web%20Project&body=Hello!%20I'm%20Interested%20in%20a%20web%20project."
+              >rielweb2@gmail.com</a>
             </div>
           </div>
           
@@ -78,7 +80,7 @@ export default function Slide5() {
              src={Image7} alt="Two people chit-chatting"></Image>
           </div> */}
                 <Image
-                  className="w-full mx-auto dark:invert-100 flex-shrink-0"
+                  className="w-full mx-auto flex-shrink-0"
                   src={Image7} 
                   alt="Two people chit-chatting"
                 />

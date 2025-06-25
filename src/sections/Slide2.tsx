@@ -30,10 +30,10 @@ export default function Slide2() {
                   ">Riel.</p>
                   <Image 
                   className="absolute z-0 
-                  left-1/2 top-1/1
-                  xl:top-16 xl:left-28
+                  top-12 sm:top-16
+                  left-1/2 xl:left-28
                  -translate-x-1/2 -translate-y-1/2
-                  max-w-[18rem] 
+                  max-w-[24rem] 
                   sm:max-w-[28rem] 
                   2xl:max-w-[30rem]    
                   "
@@ -60,14 +60,14 @@ export default function Slide2() {
             </div>
             <div className="relative max-w-xl xl:max-w-sm 2xl:max-w-2xl flex-shrink-0 mb-12 xl:mb-0"> 
                 <Image
-                className="w-full mx-auto relative z-10 dark:invert-100
+                className="w-full mx-auto relative z-10 
                 w-[clamp(16rem, 60vw, 20rem)]
                 2xl:ml-8"
                 src={Image3} 
                 alt="Two people chit-chatting"
                 />
                 <Image
-                className="w-full mx-auto absolute z-0 left-0 bottom-0 dark:invert-100 
+                className="w-full mx-auto absolute z-0 left-0 bottom-0 
                 w-[clamp(16rem, 60vw, 20rem)]
                 2xl:ml-8"
                 src={Image9} 

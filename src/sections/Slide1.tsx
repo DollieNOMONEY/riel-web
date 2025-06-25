@@ -9,7 +9,7 @@ import Image2 from '@/img/pic 2.png'
 
 export default function Slide1() {
   return (
-    <div className='w-full bg-white dark:bg-black'>
+    <div className='w-full bg-white'>
         <Container>
           <div className="
           p-5 2xl:p-0 
@@ -73,7 +73,7 @@ export default function Slide1() {
               R<span className='text-blue-500'>IE</span>L WEB
             </h1>
             <Image
-              className="w-full mx-auto dark:invert-100
+              className="w-full mx-auto
               w-[clamp(16rem, 60vw, 40rem)]
               2xl:ml-24"
               src={Image1} 

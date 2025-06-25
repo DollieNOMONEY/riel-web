@@ -10,7 +10,7 @@ import Image10 from '@/img/pic 10.png'
 export default function Slide3() {
   return (
    <div id="offer"
-        className='w-full min-h-auto bg-neutral-100 dark:bg-neutral-950 items-center justify-center'>
+        className='w-full min-h-auto bg-neutral-100  items-center justify-center'>
         
         <div className="flex flex-col xl:flex-row justify-center xl:gap-[17rem] items-center w-full px-12 pt-16">
           <div className="max-w-2xl">
@@ -31,7 +31,7 @@ export default function Slide3() {
           <div className="relative xl:max-w-xs 2xl:max-w-md border-2 rounded-2xl 
           xl:h-[40rem]
           mb-5 xl:mb-0">
-             <Image className='dark:invert-100 w-full'
+             <Image className='w-full'
              src={Image4} alt="Two people having a conversation at a table"></Image>
              <div className="relative inline-block mx-auto text-center">
               <p className="relative z-10 break-words font-bold mb-14 px-6
@@ -56,7 +56,7 @@ export default function Slide3() {
           <div className="relative xl:max-w-xs 2xl:max-w-md border-2 rounded-2xl 
           xl:h-[40rem]
           mb-5 xl:mb-0">
-            <Image className='dark:invert-100 w-full'
+            <Image className='w-full'
              src={Image5} alt="Two hands from top to bottom holding a dialogue, a newspaper, step by step"></Image>
              <div className="relative inline-block mx-auto text-center">
               <p className="relative z-10 break-words font-bold mb-14 px-6
@@ -81,7 +81,7 @@ export default function Slide3() {
           <div className="relative xl:max-w-xs 2xl:max-w-md border-2 rounded-2xl 
           xl:h-[40rem]
           mb-5 xl:mb-0">
-            <Image className='dark:invert-100 w-full'
+            <Image className='w-full'
              src={Image6} alt="Three peopple doing their own thing"></Image>
              <div className="relative inline-block mx-auto text-center">
               <p className="relative z-10 break-words font-bold mb-14 px-6

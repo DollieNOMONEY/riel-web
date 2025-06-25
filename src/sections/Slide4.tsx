@@ -1,25 +1,26 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-
-import Image8 from '@/img/pic 8.png'
+import Image2 from '@/img/pic 2.png'
 
 export default function Slide4() {
   return (
     <div id="info"
-        className='w-full min-h-auto bg-neutral-200 dark:bg-neutral-950 items-center justify-center'>
+        className='w-full min-h-auto bg-neutral-100 items-center justify-center'>
 
         <div className="flex flex-col xl:flex-row justify-center xl:gap-[17rem] items-center w-full px-12 pt-16">
           <div className="max-w-2xl relative">
             <Image 
              className="absolute z-0 
-             left-1/2 top-4 2xl:top-14
+             left-1/2 top-4 sm:top-8 2xl:top-14
              -translate-x-1/2 -translate-y-1/2
-             max-w-[18rem] 
-             sm:max-w-[28rem] 
+             max-w-[14rem] 
+             sm:max-w-[20rem] 
+             md:max-w-[25rem]
+             xl:max-w-[25rem]
              2xl:max-w-[36rem]
              w-[clamp(63vm, 80vm)]"
-              src={Image8} 
+              src={Image2} 
               alt="Blue Drawn Design"
             />
             <h2 className="font-semibold z-10 relative
