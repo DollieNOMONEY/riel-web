@@ -1,95 +1,112 @@
 import React from 'react'
 import Image from 'next/image'
-// import Link from 'next/link'
-
-import Image10 from '@/img/pic 10.png'
-import Image7 from '@/img/pic 7.png'
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import Link from 'next/link'
+import Image2 from '@/img/pic 2.png'
 
 export default function Slide5() {
   return (
-    <div 
-        id="contact"
-        style={{ backgroundColor: "#38b6ff" }}
-        className='relative w-full overflow-x-hidden min-h-auto flex items-center justify-center'>
-        <div className="flex flex-col xl:flex-row justify-center xl:gap-12 2xl:gap-20 items-center w-full px-12 mt-6">
-          <div className="max-w-8xl p-[4.5rem]">
-            <div className="relative max-w-screen-xl bg-white p-12 rounded-3xl mb-20">
-              <p className="font-bold text-left
-                text-6xl
-                sm:text-8xl xl:text-8xl 
-                ">Contact</p>
-            
-              <div className="relative text-2xl sm:text-2xl 2xl:text-2xl">
-              <p className="relative z-10 font-medium">
-                Got any questions? Reach out to us anytime.{" "}
-                <span className="relative inline-block z-10">
-                  We&apos;re here to help!
-                  <Image
-                    src={Image10}
-                    alt="Blue Drawn Design"
-                    className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
-                              w-[200%] max-w-none z-0 pointer-events-none opacity-50 brightness-75 contrast-200 saturate-100"
-                  />
-                </span>
-              </p>
-            </div>
+    <div id="pricing"
+        className='w-full min-h-auto bg-neutral-100 items-center justify-center'>
 
-             
-               <div className='mt-16'/>
-              <div className="flex gap-5">
-                <a
-                  href="https://www.facebook.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Facebook"
-                  className="text-neutral-900 hover:text-neutral-500 transition-colors"
-                >
-                  <FontAwesomeIcon icon={faFacebookF} className="text-3xl" />
-                </a>
-                <a
-                  href="https://www.instagram.com/riel_web"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Instagram" 
-                  className="text-neutral-900 hover:text-neutral-500 transition-colors"
-                >
-                  <FontAwesomeIcon icon={faInstagram} className="text-3xl" />
-                </a>
-               
-              </div>
-            </div>
-            <div className='mb-8 xl:mb-36'/>
-            <div className="flex flex-col xl:flex-row gap-2 xl:gap-24 max-w-screen-xl border-2 p-8 rounded-3xl mb-8">
-              <p className="text-2xl xl:text-3xl">Telegram</p>
-              <a className="text-2xl xl:text-3xl font-bold" target="_blank" rel="noopener noreferrer" href="https://t.me/+85578799009">+855 (0)78799009</a>
-            </div>
-            <div className="flex flex-col xl:flex-row gap-2 xl:gap-[8.5rem] max-w-screen-xl border-2 p-8 rounded-3xl xl:mb-[5.5rem]">
-              <p className="text-2xl xl:text-3xl">E-mail</p>
-              <a className="text-2xl xl:text-3xl font-bold"
-              href="mailto:rielweb2@gmail.com?subject=Interest%20in%20a%20Web%20Project&body=Hello!%20I'm%20Interested%20in%20a%20web%20project."
-              >rielweb2@gmail.com</a>
-            </div>
+        <div className="flex flex-col xl:flex-row justify-center xl:gap-[17rem] items-center w-full px-12 pt-16">
+          <div className="max-w-2xl relative">
+            <Image 
+             className="absolute z-0 
+             left-1/2 top-4 sm:top-8 2xl:top-14
+             -translate-x-1/2 -translate-y-1/2
+             max-w-[14rem] 
+             sm:max-w-[20rem] 
+             md:max-w-[25rem]
+             xl:max-w-[25rem]
+             2xl:max-w-[36rem]
+             w-[clamp(63vm, 80vm)]"
+              src={Image2} 
+              alt="Blue Drawn Design"
+            />
+            <h2 className="font-semibold z-10 relative
+                 text-4xl sm:text-6xl md:text-7xl 2xl:text-8xl 
+                text-center whitespace-nowrap
+                ">Pricing Option:
+                {/* xl:whitespace-nowrap xl:overflow-visible bg-amber-50 */}
+            </h2>
           </div>
-          
-          <div className="relative max-w-xl 2xl:max-w-2xl flex-shrink-0 mb-12 xl:mb-0"> 
-              {/* <div className="max-w-2xl pr-12">
-            <Image className='invert-100 flex-shrink-0 w-35 md:w-[600px]'
-             src={Image7} alt="Two people chit-chatting"></Image>
-          </div> */}
-                <Image
-                  className="w-full mx-auto flex-shrink-0"
-                  src={Image7} 
-                  alt="Two people chit-chatting"
-                />
-                <div className='text-center'>
-                  <p className='xl:w-[28rem] mx-auto mt-4 mb-4'><i className='text-xl'>We’re dedicated to growing your store’s success
-                  together, we turn potential into performance.</i></p>
-                </div>
-            </div>
         </div>
-      </div> 
+
+
+        <div className='mt-12 xl:pt-0'/>
+
+        
+        <div className="relative flex flex-col xl:flex-row justify-center items-center gap-2 xl:gap-10 w-full px-12 md:px-60 lg:px-80 xl:px-12">
+          <div className="relative xl:max-w-xs 2xl:max-w-md border-2 rounded-2xl px-7 py-4
+          xl:h-[40rem]
+          mb-5 xl:mb-0">
+            <div className='flex sm:gap-4 flex-col items-start sm:flex-row sm:items-end h-fit mb-5 xl:mb-10'>
+              <p className="text-5xl sm:text-7xl font-semibold mt-4">$30</p>
+              <p className="text-2xl flex items-end font-semibold mt-4 text-neutral-400">+5/month</p>
+            </div>
+            <p className='xl:mb-2 text-2xl sm:text-4xl font-semibold'>View/Layout</p>
+            <p className="xl:h-24
+            sm:text-2xl   2xl:text-xl mb-12 mt-5 xl:mb-0 xl:mt-8 2xl:mt-0 2xl:mb-0 xl:text-[1.2rem]">
+            Perfect for small businesses, personal brands, or startups looking to have an online presence.</p>
+
+            <li className="sm:text-2xl xl:text-[1.2rem] 2xl:text-xl mb-2 mt-5 xl:mt-8 2xl:mt-0 2xl:mb-1">Home Page Design</li>
+            <li className="sm:text-2xl xl:text-[1.2rem] 2xl:text-xl mb-2 mt-5 xl:mt-2 2xl:mt-0 2xl:mb-1">About Section</li>
+            <li className="sm:text-2xl xl:text-[1.2rem] 2xl:text-xl mb-2 mt-5 xl:mt-2 2xl:mt-0 2xl:mb-1">Contact Info Display</li>
+            <li className="sm:text-2xl xl:text-[1.2rem] 2xl:text-xl mb-2 mt-5 xl:mt-2 2xl:mt-0 2xl:mb-1">Custom Banner or Hero Image</li>
+            <li className="sm:text-2xl xl:text-[1.2rem] 2xl:text-xl mb-2 mt-5 xl:mt-2 2xl:mt-0 2xl:mb-1">Mobile-Friendly Design</li>
+            <li className="sm:text-2xl xl:text-[1.2rem] 2xl:text-xl mb-2 mt-5 xl:mt-2 2xl:mt-0 2xl:mb-1">Speed Optimized</li>
+            <li className="sm:text-2xl xl:text-[1.2rem] 2xl:text-xl mb-12 mt-5 xl:mt-2 2xl:mt-0 2xl:mb-1">Basic SEO Setup</li>
+           
+            <Link className="absolute bottom-5 right-6 inline-block text-sm sm:text-lg underline" href="#details">View Details</Link>
+          </div>
+
+          <div className="relative xl:max-w-xs 2xl:max-w-md border-2 rounded-2xl px-7 py-4 bg-[#38b6ff]
+          xl:h-[40rem]
+          mb-5 xl:mb-0">
+            <div className='flex gap-4 items-end h-fit mb-5 xl:mb-10'>
+              <p className="text-5xl sm:text-7xl font-semibold mt-4">$200+</p>
+            </div>
+            <p className='xl:mb-2 text-2xl sm:text-4xl font-semibold'>App Develop</p>
+            <p className="xl:h-24
+            sm:text-2xl   2xl:text-xl mb-12 mt-5 xl:mb-0 xl:mt-8 2xl:mt-0 2xl:mb-0 xl:text-[1.2rem]">
+            Ideal for startups and small businesses looking for an affordable, easy-to-use app to showcase services and engage users.</p>
+
+            <li className="sm:text-2xl xl:text-[1.2rem] 2xl:text-xl mb-2 mt-5 xl:mt-8 2xl:mt-0 2xl:mb-1">Login/Signup System</li>
+            <li className="sm:text-2xl xl:text-[1.2rem] 2xl:text-xl mb-2 mt-5 xl:mt-2 2xl:mt-0 2xl:mb-1">Backend/API system</li>
+            <li className="sm:text-2xl xl:text-[1.2rem] 2xl:text-xl mb-2 mt-5 xl:mt-2 2xl:mt-0 2xl:mb-1">Payment system</li>
+            <li className="sm:text-2xl xl:text-[1.2rem] 2xl:text-xl mb-2 mt-5 xl:mt-2 2xl:mt-0 2xl:mb-1">Admin Dashboard</li>
+            <li className="sm:text-2xl xl:text-[1.2rem] 2xl:text-xl mb-2 mt-5 xl:mt-2 2xl:mt-0 2xl:mb-1">Push Notifications</li>
+            <li className="sm:text-2xl xl:text-[1.2rem] 2xl:text-xl mb-2 mt-5 xl:mt-2 2xl:mt-0 2xl:mb-1">Multilingual Supports</li>
+            <li className="sm:text-2xl xl:text-[1.2rem] 2xl:text-xl mb-2 mt-5 xl:mt-2 2xl:mt-0 2xl:mb-1">Chat / Messaging</li>
+            <li className="sm:text-2xl xl:text-[1.2rem] 2xl:text-xl mb-12 mt-5 xl:mt-2 2xl:mt-0 2xl:mb-1">Store / Orders / Cart</li>
+           
+            <Link className="absolute bottom-5 right-6 inline-block text-sm sm:text-lg underline" href="#details">View Details</Link>
+          </div>
+
+
+          <div className="relative xl:max-w-xs 2xl:max-w-md border-2 rounded-2xl px-7 py-4
+          xl:h-[40rem]
+          mb-5 xl:mb-0">
+            <div className='flex sm:gap-4 flex-col items-start sm:flex-row sm:items-end h-fit mb-5 xl:mb-10'>
+              <p className="text-5xl sm:text-7xl font-semibold mt-4">$80</p>
+              <p className="text-2xl flex items-end font-semibold mt-4 text-neutral-400">+10/month</p>
+            </div>
+            <p className='xl:mb-2 text-2xl sm:text-4xl font-semibold'>View/Layout<br className='sm:hidden'/>/Backend</p>
+            <p className="xl:h-24
+            sm:text-2xl   2xl:text-xl mb-12 mt-5 xl:mb-0 xl:mt-8 2xl:mt-0 2xl:mb-0 xl:text-[1.2rem]">
+            Businesses that are scaling up, want to show professionalism, track leads, and have full control of their website content.</p>
+
+            <li className="sm:text-2xl xl:text-[1.2rem] 2xl:text-xl mb-2 mt-5 xl:mt-8 2xl:mt-0 2xl:mb-1">Custom Website Design</li>
+            <li className="sm:text-2xl xl:text-[1.2rem] 2xl:text-xl mb-2 mt-5 xl:mt-2 2xl:mt-0 2xl:mb-1">Full Backend System (CMS)</li>
+            <li className="sm:text-2xl xl:text-[1.2rem] 2xl:text-xl mb-2 mt-5 xl:mt-2 2xl:mt-0 2xl:mb-1">Sales or Client Tracker Dashboard</li>
+            <li className="sm:text-2xl xl:text-[1.2rem] 2xl:text-xl mb-2 mt-5 xl:mt-2 2xl:mt-0 2xl:mb-1">Optional Basic Shop Setup</li>
+            <li className="sm:text-2xl xl:text-[1.2rem] 2xl:text-xl mb-12 mt-5 xl:mt-2 2xl:mt-0 2xl:mb-1">Advanced SEO Setup</li>
+           
+            <Link className="absolute bottom-5 right-6 inline-block text-sm sm:text-lg underline" href="#details">View Details</Link>
+          </div>
+        </div>
+
+        <div className='pt-[4.45rem]'/>
+    </div>
   )
 }

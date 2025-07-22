@@ -7,6 +7,8 @@ import Slide2 from '@/sections/Slide2'
 import Slide3 from '@/sections/Slide3'
 import Slide4 from '@/sections/Slide4'
 import Slide5 from '@/sections/Slide5'
+// import Slide6 from '@/sections/Slide7'
+import Slide7 from '@/sections/Slide7'
 
 
 export default function HomePage() {
@@ -56,6 +58,8 @@ export default function HomePage() {
       <Slide3/>
       <Slide4/>
       <Slide5/>
+      {/* <Slide6/> */}
+      <Slide7/>
     </div>
   )
 }
