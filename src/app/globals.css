@@ -40,7 +40,7 @@ body {
 
 .animated-gradient-background {
   /* The gradient with your specified colors */
-  background: linear-gradient(-45deg, black, rgba(43, 47, 255, 0.39), #127ddd);
+  background: linear-gradient(-45deg, rgb(71, 71, 71), rgba(5, 49, 110, 0.39), #0077ff);
   
   /* Make the background much larger than the container */
   background-size: 400% 400%;

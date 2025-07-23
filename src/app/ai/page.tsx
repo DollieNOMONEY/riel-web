@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 // import { Fragment } from 'react';
 // import { MenuIcon } from '@heroicons/react/solid'; // Example icon
 
@@ -6,7 +7,7 @@ export default function page() {
   return (
     <main className="bg-transparent text-white font-sans antialiased">
       {/* Header Section */}
-      <header className="bg-transparent py-6 fixed top-0 left-0 right-0 z-10">
+      <header className="bg-transparent py-6 fixed top-0 left-0 right-0 z-50">
         <nav className="container mx-auto flex items-center justify-between px-4 xl:px-0">
           {/* Logo Placeholder */}
           <div className="text-5xl font-bold text-white">
@@ -53,17 +54,35 @@ export default function page() {
         </nav>
       </header>
 
-      <div 
-      className="supernova-container animated-gradient-background min-h-screen flex items-center justify-center"
-    >
-      <div className='supernova'>
-        
+    <div className='relative'>
+      
+      <div className="relative supernova-container animated-gradient-background min-h-screen flex items-center justify-center z-20">
+        <div className='supernova z-40'></div>
       </div>
+      <div className='z-30 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
+        <div className='text-center mb-6'>
+          <Link href="/" className='lg:mb-12 text-xl inline-block [font-family:var(--font-montserrat)] mx-auto text-center bg-transparent outline-2 outline-white text-white px-12 py-3 rounded-full text-black'>Check out our Portfolio</Link>
+        </div>
+        <h1 className=' font-light tracking-wide text-5xl lg:text-9xl text-center [font-family:var(--font-bebas-neue)] mb-3'>Riels AI: Your Smart <br/>Companion for Cambodia</h1>
+        <p className='z-30 text-center mb-6 text-xl'>
+          Getting answers just got simple. Riels AI provides instant, clear information on finance, education,<br/> and daily life in Khmer. No complex searches, just answers in your pocket.
+        </p>
+        <div className='text-center mb-6'>
+          <Link href="/ai/chat" className='text-xl inline-block [font-family:var(--font-montserrat)] mx-auto text-center bg-white px-12 py-3 rounded-full text-black'>AI Chat</Link>
+        </div>
+        <p className='z-30 text-center text-xl italic'>
+          Powered by OpenAI
+        </p>
+      </div>
+      
     </div>
 
 
+
+
+
       {/* Hero Section */}
-      <section className="py-24 md:py-36 bg-gradient-to-b from-gray-900 to-gray-800 relative overflow-hidden">
+      <section className="py-24 md:py-36 bg-gradient-to-b from-black to-gray-800 relative overflow-hidden">
         <div className="container mx-auto px-4 xl:px-0 text-center">
           <div className="inline-block bg-blue-800 bg-opacity-75 text-blue-200 py-1 px-3 rounded-full text-xs mb-6">
             Latest integration just arrived

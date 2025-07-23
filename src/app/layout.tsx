@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Bebas_Neue } from "next/font/google";
+import { Geist, Geist_Mono, Bebas_Neue, Montserrat} from "next/font/google";
 import "./globals.css";
 
 const bebasNeue = Bebas_Neue({
   variable: "--font-bebas-neue",
   subsets: ["latin"],
   weight: "400",
+});
+
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
+  subsets: ["latin"],
+  weight: ["600", "800"],
 });
 
 const geistSans = Geist({
@@ -31,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${bebasNeue.variable} antialiased overflow-x-hidden`}
+        className={`${geistSans.variable} ${montserrat.variable} ${geistMono.variable} ${bebasNeue.variable} antialiased overflow-x-hidden`}
       >
         {children}
       </body>
