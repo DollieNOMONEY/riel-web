@@ -8,10 +8,10 @@ export default function page() {
     <main className="bg-transparent text-white font-sans antialiased">
       {/* Header Section */}
       <header className="bg-transparent py-6 fixed top-0 left-0 right-0 z-50">
-        <nav className="container mx-auto flex items-center justify-between px-4 xl:px-0">
+        <nav className="container mx-auto flex items-center justify-between lg:px-4 xl:px-0 ">
           {/* Logo Placeholder */}
-          <div className="text-5xl font-bold text-white">
-            <h1 className="[font-family:var(--font-bebas-neue)] relative top-5 pb-12 font-bold
+          <div className="text-4xl lg:text-5xl font-bold text-white">
+            <h1 className="[font-family:var(--font-bebas-neue)] relative left-4 font-bold
               ">
               R<span className='text-blue-500'>IE</span>L WEB
             </h1>
@@ -61,10 +61,10 @@ export default function page() {
       </div>
       <div className='z-30 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
         <div className='text-center mb-6'>
-          <Link href="/" className='lg:mb-12 text-xl inline-block [font-family:var(--font-montserrat)] mx-auto text-center bg-transparent outline-2 outline-white text-white px-12 py-3 rounded-full text-black'>Check out our Portfolio</Link>
+          <Link href="/" className='lg:mb-12 text-xs lg:text-xl inline-block [font-family:var(--font-montserrat)] mx-auto text-center bg-transparent outline-2 outline-white text-white px-3 lg:px-12 py-3 rounded-full text-black'>Check out our Portfolio</Link>
         </div>
-        <h1 className=' font-light tracking-wide text-5xl lg:text-9xl text-center [font-family:var(--font-bebas-neue)] mb-3'>Riels AI: Your Smart <br/>Companion for Cambodia</h1>
-        <p className='z-30 text-center mb-6 text-xl'>
+        <h1 className=' font-light tracking-wide text-3xl lg:text-9xl text-center [font-family:var(--font-bebas-neue)] mb-3'>Riels AI: Your Smart <br/>Companion for Cambodia</h1>
+        <p className='z-30 text-center mb-6 text-sm lg:text-xl'>
           Getting answers just got simple. Riels AI provides instant, clear information on finance, education,<br/> and daily life in Khmer. No complex searches, just answers in your pocket.
         </p>
         <div className='text-center mb-6'>
