@@ -21,16 +21,16 @@ export default function Slide1() {
               xl:hidden">
               R<span className='text-blue-500'>IE</span>L WEB
             </h1>
-            <p className=" tracking-widest
+            <p className="tracking-widest
             sm:text-8xl 2xl:text-9xl 
             mt-12 2xl:mt-48 
             text-6xl
-            text-center 2xl:text-left
+            text-center 2xl:text-left [font-family:var(--font-bebas-neue)]
             ">Simplify</p>
             <div className='relative'>
               <p className="relative tracking-widest z-10 mt-3
               text-6xl sm:text-8xl 2xl:text-9xl 
-              text-center 2xl:text-left
+              text-center 2xl:text-left [font-family:var(--font-bebas-neue)]
               ">Succeed</p>
               <Image 
              className="absolute  z-0 
