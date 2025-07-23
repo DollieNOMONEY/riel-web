@@ -1,5 +1,4 @@
 import React from 'react'
-import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -9,7 +8,6 @@ import Image6 from '@/img/pic 6.png'
 import Image10 from '@/img/pic 10.png'
 
 export default function Slide3() {
-  const [animate, setAnimate] = useState(false);
   return (
    <div id="offer"
         className='w-full min-h-auto bg-neutral-100  items-center justify-center'>

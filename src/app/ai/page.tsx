@@ -72,7 +72,7 @@ export default function page() {
             Boost your <span className="text-blue-300">rankings</span> with AI.
           </h1>
           <p className="max-w-2xl mx-auto text-lg text-gray-400 mb-10">
-            Elevate your site's visibility effortlessly with AI, where smart technology meets user-friendly SEO tools.
+            Elevate your site&apos;s visibility effortlessly with AI, where smart technology meets user-friendly SEO tools.
           </p>
           <button className="bg-blue-500 hover:bg-blue-600 text-white text-lg font-semibold py-3 px-8 rounded-full">
             Start for free
@@ -93,7 +93,7 @@ export default function page() {
       {/* Trusted By Section */}
       <section className="py-16 bg-gray-800">
         <div className="container mx-auto px-4 xl:px-0 text-center">
-          <p className="text-gray-400 text-sm mb-8">Trusted by the world's most innovative teams</p>
+          <p className="text-gray-400 text-sm mb-8">Trusted by the world&apos;s most innovative teams</p>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 justify-center items-center">
             <span className="text-gray-300 font-semibold text-sm">Acme Corp</span>
             <span className="text-gray-300 font-semibold text-sm">Quantum</span>
