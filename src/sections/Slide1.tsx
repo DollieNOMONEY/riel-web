@@ -52,14 +52,19 @@ export default function Slide1() {
               ">
               Empowering your business with smart solutions.
             </p>
-            <div className='text-center 2xl:text-left mb-15 2xl:mb-0'>
+            <div className='flex gap-5 text-center 2xl:text-left mb-15 2xl:mb-0'>
               <Link 
               style={{ backgroundColor: "#127ddd" }} 
               className="bg-blue-500 px-6 py-3 rounded-full font-extrabold" 
               href="#about">More Information
               </Link>
+              <Link 
+              className="px-6 py-3 rounded-full font-extrabold outline-2 outline-[#127ddd]" 
+              href="/ai">Open Chat
+              </Link>
             </div>
-            <div className='2xl:mt-[21.25rem]'/>
+            
+            <div className='2xl:mt-[17rem]'/>
           </div>
 
           <div className="max-w-2xl flex-shrink-0 
@@ -70,7 +75,7 @@ export default function Slide1() {
               xl:left-12 2xl:left-28
               text-6xl
               hidden xl:block">
-              R<span className='text-blue-500'>IE</span>L WEB
+              R<span className='text-blue-500'>IE</span>LS WEB
             </h1>
             <Image
               className="w-full mx-auto

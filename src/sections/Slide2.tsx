@@ -27,7 +27,7 @@ export default function Slide2() {
                   text-6xl
                   sm:text-8xl 2xl:text-8xl 
                   text-center xl:text-left
-                  ">Riel.</p>
+                  ">Riels.</p>
                   <Image 
                   className="absolute z-0 
                   top-12 sm:top-16
@@ -44,7 +44,7 @@ export default function Slide2() {
                 <p className="break-words
                 sm:text-2xl 2xl:text-2xl 
                 ">
-                Riel is your growth accelerator—dedicated to making
+                Riels is your growth accelerator—dedicated to making
                 business operations smoother, faster, and more
                 profitable. We build custom web solutions that
                 automate routine tasks, streamline workflows, and

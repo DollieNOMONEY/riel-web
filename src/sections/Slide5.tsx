@@ -39,7 +39,8 @@ export default function Slide5() {
         <div className="relative flex flex-col xl:flex-row justify-center items-center gap-2 xl:gap-10 w-full px-12 md:px-60 lg:px-80 xl:px-12">
           <div className="relative xl:max-w-xs 2xl:max-w-md border-2 rounded-2xl px-7 py-4
           xl:h-[40rem]
-          mb-5 xl:mb-0">
+          mb-5 xl:mb-0
+          hover:scale-105 transition-transform">
             <div className='flex sm:gap-4 flex-col items-start sm:flex-row sm:items-end h-fit mb-5 xl:mb-10'>
               <p className="text-5xl sm:text-7xl font-semibold mt-4">$30</p>
               <p className="text-2xl flex items-end font-semibold mt-4 text-neutral-400">+5/month</p>
@@ -62,7 +63,8 @@ export default function Slide5() {
 
           <div className="relative xl:max-w-xs 2xl:max-w-md border-2 rounded-2xl px-7 py-4 bg-[#38b6ff]
           xl:h-[40rem]
-          mb-5 xl:mb-0">
+          mb-5 xl:mb-0
+          hover:scale-105 transition-transform">
             <div className='flex gap-4 items-end h-fit mb-5 xl:mb-10'>
               <p className="text-5xl sm:text-7xl font-semibold mt-4">$200+</p>
             </div>
@@ -86,7 +88,8 @@ export default function Slide5() {
 
           <div className="relative xl:max-w-xs 2xl:max-w-md border-2 rounded-2xl px-7 py-4
           xl:h-[40rem]
-          mb-5 xl:mb-0">
+          mb-5 xl:mb-0
+          hover:scale-105 transition-transform">
             <div className='flex sm:gap-4 flex-col items-start sm:flex-row sm:items-end h-fit mb-5 xl:mb-10'>
               <p className="text-5xl sm:text-7xl font-semibold mt-4">$80</p>
               <p className="text-2xl flex items-end font-semibold mt-4 text-neutral-400">+10/month</p>

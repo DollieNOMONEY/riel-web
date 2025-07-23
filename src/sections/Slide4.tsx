@@ -39,7 +39,8 @@ export default function Slide4() {
         <div className="flex flex-col xl:flex-row justify-center items-center gap-2 xl:gap-10 w-full px-12 md:px-60 lg:px-80 xl:px-12">
           <div className="relative xl:max-w-xs 2xl:max-w-md border-2 rounded-2xl px-7 py-4
           xl:h-[40rem]
-          mb-5 xl:mb-0">
+          mb-5 xl:mb-0
+          hover:scale-105 transition-transform">
             <p className="text-3xl font-semibold mt-4 xl:h-40 ">Custom web platform streamline operations.</p>
             <p className="xl:h-65
             sm:text-2xl 2xl:text-2xl mb-12 mt-5 xl:mb-24 xl:mt-8 2xl:mt-0 2xl:mb-0">
@@ -55,7 +56,8 @@ export default function Slide4() {
 
           <div className="relative xl:max-w-xs 2xl:max-w-md border-2 rounded-2xl px-7 py-4
           xl:h-[40rem]
-          mb-5 xl:mb-0">
+          mb-5 xl:mb-0
+          hover:scale-105 transition-transform">
            <p className="text-3xl font-semibold mt-4 xl:h-40">Business tracking helping you track every step to business success.</p>
             <p className=" xl:h-65
             sm:text-2xl 2xl:text-2xl mb-12 mt-5 xl:mb-24 xl:mt-8 2xl:mt-0 2xl:mb-0">
@@ -72,10 +74,12 @@ export default function Slide4() {
 
           <div className="relative xl:max-w-xs 2xl:max-w-md border-2 rounded-2xl px-7 py-4
           xl:h-[40rem]
-          mb-5 xl:mb-0">
+          mb-5 xl:mb-0
+          hover:scale-105 transition-transform">
             <p className="text-3xl font-semibold mt-4 xl:h-40">Marketing, design, where strategy meets style — Track and Grow.</p>
             <p className="xl:h-65
-            sm:text-2xl 2xl:text-2xl mb-12 mt-5 xl:mb-24 xl:mt-8 2xl:mt-0 2xl:mb-0">
+            sm:text-2xl 2xl:text-2xl mb-12 mt-5 xl:mb-24 xl:mt-8 2xl:mt-0 2xl:mb-0
+            ">
               At the intersection of marketing
               and design, we bring you a
               platform where strategy meets
