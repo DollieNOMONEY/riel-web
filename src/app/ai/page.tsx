@@ -68,7 +68,7 @@ export default function page() {
           Getting answers just got simple. Riels AI provides instant, clear information on finance, education,<br/> and daily life in Khmer. No complex searches, just answers in your pocket.
         </p>
         <div className='text-center mb-6'>
-          <Link href="/ai/chat" className='text-xl inline-block [font-family:var(--font-montserrat)] mx-auto text-center bg-white px-12 py-3 rounded-full text-black'>AI Chat</Link>
+          <Link href="/ai/app" className='text-xl inline-block [font-family:var(--font-montserrat)] mx-auto text-center bg-white px-12 py-3 rounded-full text-black'>AI Chat</Link>
         </div>
         <p className='z-30 text-center text-xl italic'>
           Powered by OpenAI
