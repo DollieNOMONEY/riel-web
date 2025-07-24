@@ -15,6 +15,7 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@studio-freight/lenis": "^1.0.42",
     "next": "15.3.3",
+    "openai": "^5.10.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
