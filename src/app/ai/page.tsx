@@ -45,7 +45,7 @@ export default function page() {
           </ul>
           <div className="flex items-center space-x-4">
             <button className="bg-blue-500 hover:bg-blue-600 text-white text-sm font-semibold py-2 px-4 rounded-full">
-              Join waitlist
+              Sign In
             </button>
             <div className="md:hidden">
               {/* <MenuIcon className="h-6 w-6 text-blue-300" /> */}
@@ -63,23 +63,19 @@ export default function page() {
         <div className='text-center mb-6'>
           <Link href="/" className='lg:mb-12 text-xs lg:text-xl inline-block [font-family:var(--font-montserrat)] mx-auto text-center bg-transparent outline-2 outline-white text-white px-3 lg:px-12 py-3 rounded-full text-black'>Check out our Portfolio</Link>
         </div>
-        <h1 className=' font-light tracking-wide text-3xl lg:text-9xl text-center [font-family:var(--font-bebas-neue)] mb-3'>Riels AI: Your Smart <br/>Companion for Cambodia</h1>
+        <h1 className=' font-light tracking-wide text-3xl lg:text-8xl text-center [font-family:var(--font-bebas-neue)] mb-3'>Riels AI: Your Smart <br/>Companion for Cambodia</h1>
         <p className='z-30 text-center mb-6 text-sm lg:text-xl'>
           Getting answers just got simple. Riels AI provides instant, clear information on finance, education,<br/> and daily life in Khmer. No complex searches, just answers in your pocket.
         </p>
-        <div className='text-center mb-6'>
+        <div className='text-center mb-3'>
           <Link href="/ai/app" className='text-xl inline-block [font-family:var(--font-montserrat)] mx-auto text-center bg-white px-12 py-3 rounded-full text-black'>AI Chat</Link>
         </div>
-        <p className='z-30 text-center text-xl italic'>
+        <p className='z-30 text-center text-sm italic'>
           Powered by OpenAI
         </p>
       </div>
       
     </div>
-
-
-
-
 
       {/* Hero Section */}
       <section className="py-24 md:py-36 bg-gradient-to-b from-black to-gray-800 relative overflow-hidden">
@@ -88,14 +84,14 @@ export default function page() {
             Latest integration just arrived
           </div>
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8">
-            Boost your <span className="text-blue-300">rankings</span> with AI.
+            Make your life <span className="text-blue-300">easier</span> with RIels AI.
           </h1>
           <p className="max-w-2xl mx-auto text-lg text-gray-400 mb-10">
             Elevate your site&apos;s visibility effortlessly with AI, where smart technology meets user-friendly SEO tools.
           </p>
-          <button className="bg-blue-500 hover:bg-blue-600 text-white text-lg font-semibold py-3 px-8 rounded-full">
-            Start for free
-          </button>
+          <Link href="/ai/app" className="bg-blue-500 hover:bg-blue-600 text-white text-lg font-semibold py-3 px-8 rounded-full">
+            Try for free
+          </Link>
           <div className="mt-12">
             {/* Main Dashboard Image Placeholder */}
             <div className="relative rounded-lg overflow-hidden shadow-lg mx-auto max-w-4xl">
@@ -112,16 +108,16 @@ export default function page() {
       {/* Trusted By Section */}
       <section className="py-16 bg-gray-800">
         <div className="container mx-auto px-4 xl:px-0 text-center">
-          <p className="text-gray-400 text-sm mb-8">Trusted by the world&apos;s most innovative teams</p>
+          <p className="text-gray-400 text-sm mb-8">Powered by</p>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 justify-center items-center">
-            <span className="text-gray-300 font-semibold text-sm">Acme Corp</span>
-            <span className="text-gray-300 font-semibold text-sm">Quantum</span>
-            <span className="text-gray-300 font-semibold text-sm">Echo Valley</span>
-            <span className="text-gray-300 font-semibold text-sm">PULSE</span>
-            <span className="text-gray-300 font-semibold text-sm">Outside</span>
-            <span className="text-gray-300 font-semibold text-sm">APEX</span>
-            <span className="text-gray-300 font-semibold text-sm">Celestial</span>
-            <span className="text-gray-300 font-semibold text-sm">2TWICE</span>
+            <span className="text-gray-300 font-semibold text-sm">ChatGPT-4o</span>
+            <span className="text-gray-300 font-semibold text-sm">OpenAI</span>
+            <span className="text-gray-300 font-semibold text-sm">Cambodian Professors</span>
+            <span className="text-gray-300 font-semibold text-sm">Riels</span>
+            <span className="text-gray-300 font-semibold text-sm">Riels Web</span>
+            <span className="text-gray-300 font-semibold text-sm">Riels Marketing</span>
+            <span className="text-gray-300 font-semibold text-sm">Riels Dev</span>
+            <span className="text-gray-300 font-semibold text-sm">Riels Finance</span>
           </div>
         </div>
       </section>
