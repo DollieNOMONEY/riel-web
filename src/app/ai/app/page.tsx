@@ -73,9 +73,9 @@ export default function RielAIPage() {
         ) : (
           messages.map((msg, index) => (
             <div key={index} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
-              <div className={`max-w-lg px-4 py-2 rounded-xl ${msg.role === 'user' ? 'bg-blue-600 text-white' : 'bg-gray-100 text-gray-800'}`}>
+              <div className={`max-w-lg px-4 py-2 rounded-xl whitespace-pre-wrap ${msg.role === 'user' ? 'bg-blue-600 text-white' : 'bg-gray-100 text-gray-800'}`}>
                 {msg.content}
-              </div>
+            </div>
             </div>
           ))
         )}
