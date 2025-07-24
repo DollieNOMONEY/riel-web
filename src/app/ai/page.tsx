@@ -87,7 +87,7 @@ export default function page() {
             Make your life <span className="text-blue-300">easier</span> with RIels AI.
           </h1>
           <p className="max-w-2xl mx-auto text-lg text-gray-400 mb-10">
-            Elevate your site&apos;s visibility effortlessly with AI, where smart technology meets user-friendly SEO tools.
+            Getting answers just got simple. Riels AI provides instant, clear information on finance, education,<br/> and daily life in Khmer. No complex searches, just answers in your pocket.
           </p>
           <Link href="/ai/app" className="bg-blue-500 hover:bg-blue-600 text-white text-lg font-semibold py-3 px-8 rounded-full">
             Try for free
@@ -134,10 +134,10 @@ export default function page() {
       {/* Features Section */}
       <section className="py-20 bg-gray-900">
         <div className="container mx-auto px-4 xl:px-0 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-12">
-            Harness the power of AI, making search engine optimization intuitive and effective for all skill levels.
-          </h2>
-
+          
+        <div className='text-center mb-6'>
+          <Link href="/" className='lg:mb-12 text-xs lg:text-xl inline-block [font-family:var(--font-montserrat)] mx-auto text-center bg-transparent outline-2 outline-white text-white px-3 lg:px-12 py-3 rounded-full text-black'>Check out our Portfolio</Link>
+        </div>
      
         </div>
       </section>
