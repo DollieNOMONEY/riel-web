@@ -15,7 +15,7 @@ export default function Slide1() {
           p-5 2xl:p-0 
           mr-0 2xl:mr-28
           max-w-9xl 2xl:min-w-[600px] 
-          xl:order-2">
+          xl:order-2 mb-11">
             <h1 className="[font-family:var(--font-bebas-neue)] relative top-5 pb-12
               text-6xl
               xl:hidden">
@@ -60,7 +60,7 @@ export default function Slide1() {
               </Link>
               <Link 
               className="px-6 py-3 rounded-full font-extrabold outline-2 outline-[#127ddd]" 
-              href="/ai">Open Chat
+              href="/ai/app">Open Chat
               </Link>
             </div>
             

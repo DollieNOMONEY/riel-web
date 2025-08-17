@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Bebas_Neue, Montserrat} from "next/font/google";
 import "./globals.css";
+import { SessionProvider } from 'next-auth/react';
 
 const bebasNeue = Bebas_Neue({
   variable: "--font-bebas-neue",
@@ -26,7 +27,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Riel Web App",
-  description: "Portfolio website for Riel",
+  description: "Portfolio website for Riel and an AI Assistant for Cambodia",
 };
 
 export default function RootLayout({
@@ -39,7 +40,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${montserrat.variable} ${geistMono.variable} ${bebasNeue.variable} antialiased overflow-x-hidden`}
       >
-        {children}
+        <SessionProvider>
+          {children}
+        </SessionProvider>
       </body>
     </html>
   );
