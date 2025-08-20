@@ -78,7 +78,7 @@ const FormattedMessage = ({ content }: FormattedMessageProps) => {
           case 'text':
             return <p key={index}>{item.text}</p>;
           case 'image_url':
-            return <Image key={index} src={item.image_url.url} alt="User attachment" className="mt-2 rounded-lg max-w-xs" />;
+            return <Image key={index} src={item.image_url.url} alt="User attachment" className="mt-2 rounded-lg max-w-xs" width={500} height={500} />;
           // case 'refusal':
           //   return <p key={index}>**This content was refused.**</p>; // Or any other handling
           default:
@@ -210,7 +210,7 @@ export default function RielAIPage() {
       <div className="p-4 w-full max-w-4xl mx-auto border-t border-gray-200">
         {attachedImage && (
           <div className="relative w-24 h-24 mb-2 p-1 border rounded-md">
-            <Image src={attachedImage.data} alt="Attachment preview" className="w-full h-full object-cover rounded-md" />
+            <Image src={attachedImage.data} alt="Attachment preview" className="w-full h-full object-cover rounded-md" width={500} height={500} />
             <button
               onClick={() => setAttachedImage(null)}
               className="absolute -top-2 -right-2 bg-gray-700 text-white rounded-full h-6 w-6 flex items-center justify-center text-xs"

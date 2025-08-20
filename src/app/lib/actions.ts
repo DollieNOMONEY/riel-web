@@ -7,7 +7,7 @@ import bcrypt from 'bcryptjs';
 import { redirect } from 'next/navigation';
 import { signOut } from '@/auth';
 import OpenAI from 'openai';
-import type { ChatCompletionMessageParam } from 'openai/resources/chat/completions';
+// import type { ChatCompletionMessageParam } from 'openai/resources/chat/completions';
 
 // --- AI Response Function ---
 const openai = new OpenAI({
