@@ -12,6 +12,7 @@ async function readUsers(): Promise<User[]> {
     return JSON.parse(data);
   } catch (error) {
     // If the file doesn't exist or is empty, return an empty array
+    console.log(error);
     return [];
   }
 }

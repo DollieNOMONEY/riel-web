@@ -2,6 +2,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { type ChatMessage } from '@/app/lib/definitions';
+import Image from 'next/image';
 // import { useSession, signOut as nextAuthSignOut } from 'next-auth/react';
 // import { signOutAction, getAIResponse } from '@/app/lib/actions';
 import { getAIResponse } from '@/app/lib/actions';
@@ -30,7 +31,31 @@ const ThinkingIndicator = () => (
     </div>
   </div>
 );
-const FormattedMessage = ({ content }: { content: any }) => {
+// const FormattedMessage = ({ content }: { content: any }) => {
+//   if (typeof content === 'string') {
+//     const boldRegex = /\*\*(.*?)\*\*/g;
+//     const parts = content.split(boldRegex);
+//     return (<>{parts.map((part, index) => index % 2 === 1 ? <strong key={index}>{part}</strong> : part)}</>);
+//   }
+//   return (
+//     <div className="space-y-2">
+//       {content.map((item: any, index: number) => {
+//         if (item.type === 'text' && item.text) {
+//           return <p key={index}>{item.text}</p>;
+//         }
+//         if (item.type === 'image_url') {
+//           return <Image key={index} src={item.image_url.url} alt="User attachment" className="mt-2 rounded-lg max-w-xs" />;
+//         }
+//         return null;
+//       })}
+//     </div>
+//   );
+// };
+type FormattedMessageProps = {
+  content: string | MessageItem[];
+};
+
+const FormattedMessage = ({ content }: FormattedMessageProps) => {
   if (typeof content === 'string') {
     const boldRegex = /\*\*(.*?)\*\*/g;
     const parts = content.split(boldRegex);
@@ -38,12 +63,12 @@ const FormattedMessage = ({ content }: { content: any }) => {
   }
   return (
     <div className="space-y-2">
-      {content.map((item: any, index: number) => {
+      {content.map((item, index) => {
         if (item.type === 'text' && item.text) {
           return <p key={index}>{item.text}</p>;
         }
         if (item.type === 'image_url') {
-          return <img key={index} src={item.image_url.url} alt="User attachment" className="mt-2 rounded-lg max-w-xs" />;
+          return <Image key={index} src={item.image_url.url} alt="User attachment" className="mt-2 rounded-lg max-w-xs" />;
         }
         return null;
       })}
@@ -52,6 +77,10 @@ const FormattedMessage = ({ content }: { content: any }) => {
 };
 
 
+
+type MessageItem =
+  | { type: 'text'; text: string }
+  | { type: 'image_url'; image_url: { url: string } };
 
 
 export default function RielAIPage() {
@@ -72,7 +101,8 @@ export default function RielAIPage() {
     e.preventDefault();
     if (!input.trim() && !attachedImage) return;
 
-    const userMessageContent: any[] = [];
+    // const userMessageContent: any[] = [];
+    const userMessageContent: MessageItem[] = [];
     if (input.trim()) {
         userMessageContent.push({ type: 'text', text: input });
     }
@@ -166,7 +196,7 @@ export default function RielAIPage() {
       <div className="p-4 w-full max-w-4xl mx-auto border-t border-gray-200">
         {attachedImage && (
           <div className="relative w-24 h-24 mb-2 p-1 border rounded-md">
-            <img src={attachedImage.data} alt="Attachment preview" className="w-full h-full object-cover rounded-md" />
+            <Image src={attachedImage.data} alt="Attachment preview" className="w-full h-full object-cover rounded-md" />
             <button
               onClick={() => setAttachedImage(null)}
               className="absolute -top-2 -right-2 bg-gray-700 text-white rounded-full h-6 w-6 flex items-center justify-center text-xs"

@@ -7,8 +7,10 @@ export const authConfig = {
   callbacks: {
     // The authorized callback is no longer needed here for redirect logic.
     // We will handle all redirect logic in the middleware for clarity.
-    authorized({ auth: _auth, request: { nextUrl: _nextUrl } }) {
-      return true;
+    
+    // authorized({ auth, request: { nextUrl } }) {
+    authorized() {
+      return true; // Allow all requests by default; middleware will handle specifics.
     },
   },
   providers: [],
