@@ -1,21 +1,21 @@
 'use server';
 
 import { z } from 'zod';
-import { User, SignupFormState, ChatMessage } from './definitions';
+import { User, SignupFormState } from './definitions';
 import { createUser, getUser } from './data';
 import bcrypt from 'bcryptjs';
 import { redirect } from 'next/navigation';
 import { signOut } from '@/auth';
 import OpenAI from 'openai';
+import type { ChatCompletionMessageParam } from 'openai/resources/chat/completions';
 
 // --- AI Response Function ---
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-export async function getAIResponse(history: ChatMessage[]) {
-  // ✨ FIX: Create the system prompt as a separate, typed object.
-  const systemMessage: ChatMessage = {
+export async function getAIResponse(history: ChatCompletionMessageParam[]) {
+  const systemMessage: ChatCompletionMessageParam = {
     role: "system",
     content: `You are Riel AI, a friendly, patient, and encouraging expert assistant for Cambodia. You are a jack-of-all-trades, designed to be as helpful as possible to Khmer people.
 
@@ -69,7 +69,7 @@ export async function getAIResponse(history: ChatMessage[]) {
   try {
     const chatCompletion = await openai.chat.completions.create({
       model: "gpt-4o-mini", 
-      messages: messagesWithSystemPrompt as any, // Pass the pre-built array
+      messages: messagesWithSystemPrompt,
     });
 
     const responseMessage = chatCompletion.choices[0]?.message?.content;
