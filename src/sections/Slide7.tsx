@@ -10,7 +10,7 @@ export default function Slide7() {
         id="contact"
         style={{ backgroundColor: "#000000" }}
         className='relative w-full overflow-x-hidden min-h-auto flex items-center justify-center'>
-        <img
+        <Image
         src="/images/background/background3.png"
         alt="Layout 3 Background"
         className="absolute inset-0 w-full h-full object-cover brightness-[25%] z-0"

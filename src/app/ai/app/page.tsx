@@ -2,9 +2,9 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { type ChatMessage } from '@/app/lib/definitions';
-import { useSession, signOut as nextAuthSignOut } from 'next-auth/react';
-import { signOutAction, getAIResponse } from '@/app/lib/actions';
-import Link from 'next/link';
+// import { useSession, signOut as nextAuthSignOut } from 'next-auth/react';
+// import { signOutAction, getAIResponse } from '@/app/lib/actions';
+import { getAIResponse } from '@/app/lib/actions';
 // import { getAIResponse, type ChatMessage } from '@/app/actions';
 import Navigation from '@/components/Navigation';
 
@@ -55,7 +55,7 @@ const FormattedMessage = ({ content }: { content: any }) => {
 
 
 export default function RielAIPage() {
-  const { data: session, status } = useSession();
+  // const { data: session, status } = useSession();
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -101,11 +101,11 @@ export default function RielAIPage() {
   };
 
 
-  const handleSignOut = async (event: React.FormEvent) => {
-    event.preventDefault();
-    await signOutAction();
-    await nextAuthSignOut({ redirectTo: "/" });
-  };
+  // const handleSignOut = async (event: React.FormEvent) => {
+  //   event.preventDefault();
+  //   await signOutAction();
+  //   await nextAuthSignOut({ redirectTo: "/" });
+  // };
 
   const handleAttachmentClick = () => {
     fileInputRef.current?.click();
