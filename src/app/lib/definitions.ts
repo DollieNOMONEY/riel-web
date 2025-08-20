@@ -7,8 +7,6 @@ export type User = {
   password: string;
 };
 
-export type ChatMessage = ChatCompletionMessageParam;
-
 // export type ChatMessage = {
 //   role: "user" | "assistant" | "system";
 //   content: string | Array<{
@@ -19,6 +17,7 @@ export type ChatMessage = ChatCompletionMessageParam;
 //     image_url: { url: string };
 //   }>;
 // };
+export type ChatMessage = ChatCompletionMessageParam;
 
 export type SignupFormState = {
   errors?: {
