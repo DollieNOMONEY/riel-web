@@ -10,8 +10,6 @@ import { getAIResponse } from '@/app/lib/actions';
 import {
   ChatCompletionContentPart,
   ChatCompletionContentPartRefusal,
-  ChatCompletionContentPartText,
-  ChatCompletionContentPartImage,
 } from 'openai/resources/chat/completions';
 import Navigation from '@/components/Navigation';
 
