@@ -35,7 +35,7 @@ export default function Slide7() {
             </div>
 
              
-               <div className='mt-16'/>
+              <div className='mt-16'/>
               <div className="flex gap-5">
                 <a
                   href="https://www.facebook.com/"
@@ -55,8 +55,8 @@ export default function Slide7() {
                 >
                   <FontAwesomeIcon icon={faInstagram} className="text-3xl text-white" />
                 </a>
-               
               </div>
+              
             </div>
             <div className='mb-8 xl:mb-[9.4rem]'/>
             <div className="flex flex-col xl:flex-row gap-2 xl:gap-24 max-w-screen-xl p-8 rounded-3xl mb-8 text-white">

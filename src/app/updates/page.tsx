@@ -18,7 +18,7 @@ export default function UpdatePage() {
                 <div className="flex flex-col relative z-20 md:w-full
                 p-5 
                 mr-0 
-                max-w-9xl
+                max-w-8xl
                 ">
                     <div className='flex justify-between pt-5 px-5 mb-8'>
                         <div className='w-12 h-12 rounded-full bg-white'></div>
@@ -27,79 +27,96 @@ export default function UpdatePage() {
                                 src="/images/updates/icon2.png"
                                 alt="AI Chat"
                                 className="w-8 h-8"
-                                width={48}
-                                height={48}
+                                width={500}
+                                height={500}
                             />
                             <p className='relative top-1'>0</p>
                         </div>
                     </div>
                     <h1 className='text-white text-6xl text-center mb-5'>Riels AI</h1>
                     <h1 className='text-white text-xl text-center mb-8'>LOCAL KNOWLEDGE, GLOBAL AI POWER.</h1>
-                    <div className='grid grid-cols-3 gap-4 rounded-2xl bg-[#121212a9] p-6 lg:p-8 md:mx-12 lg:mx-60 xl:mx-72 2xl:mx-96'>
-                        <div className='flex flex-col items-center'>
+                    <div className="w-full grid grid-cols-3 gap-4 rounded-2xl bg-[#121212a9] p-6 lg:p-8 md:max-w-screen-md mb-12 xl:min-h-[400px] mx-auto">
+                        <div className='flex flex-col items-center justify-center h-full'>
                             <Image
                                 src="/images/updates/icon1.png"
                                 alt="AI Chat"
-                                className="w-12 h-12"
-                                width={48}
-                                height={48}
+                                className="w-12 h-12 xl:w-16 xl:h-16"
+                                width={500}
+                                height={500}
                             />
                             <h6>AI Chat</h6>
                         </div>
-                        <div className='flex flex-col items-center'>
+                        <div className='flex flex-col items-center justify-center h-full'>
                             <Image
                                 src="/images/updates/icon2.png"
                                 alt="AI Chat"
-                                className="w-12 h-12"
-                                width={48}
-                                height={48}
+                                className="w-12 h-12 xl:w-16 xl:h-16"
+                                width={500}
+                                height={500}
                             />
                             <h6>Riel Token</h6>
                         </div>
-                        <div className='flex flex-col items-center'>
+                        <div className='flex flex-col items-center justify-center h-full'>
                             <Image
                                 src="/images/updates/icon3.png"
                                 alt="AI Chat"
-                                className="w-12 h-12"
-                                width={48}
-                                height={48}
+                                className="w-12 h-12 xl:w-16 xl:h-16"
+                                width={500}
+                                height={500}
                             />
                             <h6>Subscription</h6>
                         </div>
-                        <div className='flex flex-col items-center'>
+                        <div className='flex flex-col items-center justify-center h-full'>
                             <Image
                                 src="/images/updates/icon4.png"
                                 alt="AI Chat"
-                                className="w-12 h-12"
-                                width={48}
-                                height={48}
+                                className="w-12 h-12 xl:w-16 xl:h-16"
+                                width={500}
+                                height={500}
                             />
                             <h6>AI Voice</h6>
                         </div>
-                        <div className='flex flex-col items-center'>
+                        <div className='flex flex-col items-center justify-center h-full'>
                             <Image
                                 src="/images/updates/icon5.png"
                                 alt="AI Chat"
-                                className="w-12 h-12"
-                                width={48}
-                                height={48}
+                                className="w-12 h-12 xl:w-16 xl:h-16"
+                                width={500}
+                                height={500}
                             />
                             <h6>Version</h6>
                         </div>
-                        <div className='flex flex-col items-center'>
+                        <div className='flex flex-col items-center justify-center h-full'>
                             <Image
                                 src="/images/updates/icon6.png"
                                 alt="AI Chat"
-                                className="w-12 h-12"
-                                width={48}
-                                height={48}
+                                className="w-12 h-12 xl:w-16 xl:h-16"
+                                width={500}
+                                height={500}
                             />
                             <h6>History</h6>
                         </div>
                     </div>
 
-                    <div className="flex w-full justify-around p-32 rounded-3xl mb-20">
-                        
+                    <div className="flex gap-10 justify-center mb-12">
+                        <a
+                            href="https://www.facebook.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Facebook"
+                            className="text-neutral-900 hover:text-neutral-500 transition-colors"
+                        >
+                            <FontAwesomeIcon icon={faFacebookF} className="text-3xl text-white" />
+                        </a>
+                        <a
+                            href="https://www.instagram.com/riel_web"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Instagram" 
+                            className="text-neutral-900 hover:text-neutral-500 transition-colors"
+                        >
+                            <FontAwesomeIcon icon={faInstagram} className="text-3xl text-white" />
+                        </a>
                     </div>
                     
                 </div>
@@ -111,10 +128,10 @@ export default function UpdatePage() {
             <div className="flex flex-col relative z-20 md:w-full
             p-5 
             mr-0 
-            max-w-9xl
+            max-w-8xl
             ">
-                <h1 className='text-5xl'>Latest Updates</h1>
-                <div className='flex flex-col md:flex-row md:justify-center gap-8 mt-8 mb-16 text-center'>
+                <h1 className='text-5xl m-12'>Latest Updates</h1>
+                <div className='flex flex-col md:flex-row md:justify-center gap-8 mt-8 mb-24 text-center'>
                     <div className='flex flex-col items-center md:w-[300px] xl:w-[500px]'>
                         <Image
                             src="/images/updates/latestupdate1.png"

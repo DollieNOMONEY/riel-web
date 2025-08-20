@@ -33,6 +33,9 @@ export default function Navigation() {
                         <div className='hidden lg:inline'>
                             <Link href="/" className='text-sm hover:underline active:underline uppercase'>Back</Link>
                         </div>
+                        <div className='hidden lg:inline'>
+                            <Link href="/updates" className='text-sm hover:underline active:underline uppercase'>Blog</Link>
+                        </div>
                         {/* <div className='hidden lg:inline'>
                             <a className='text-sm  uppercase'>Chats</a>
                         </div> */}
