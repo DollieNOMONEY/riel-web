@@ -7,7 +7,12 @@ import Image from 'next/image';
 // import { signOutAction, getAIResponse } from '@/app/lib/actions';
 import { getAIResponse } from '@/app/lib/actions';
 // import { getAIResponse, type ChatMessage } from '@/app/actions';
-import { type ChatCompletionContentPart } from 'openai/resources/chat/completions';
+import {
+  ChatCompletionContentPart,
+  ChatCompletionContentPartRefusal,
+  ChatCompletionContentPartText,
+  ChatCompletionContentPartImage,
+} from 'openai/resources/chat/completions';
 import Navigation from '@/components/Navigation';
 
 // --- SVG Icon Components (Keep them as they are) ---
@@ -52,37 +57,37 @@ const ThinkingIndicator = () => (
 //     </div>
 //   );
 // };
+type CustomContentPart = ChatCompletionContentPart | ChatCompletionContentPartRefusal;
+
 type FormattedMessageProps = {
-  content: string | ChatCompletionContentPart[] | null | undefined;
+  content: string | CustomContentPart[] | null | undefined;
 };
 
 const FormattedMessage = ({ content }: FormattedMessageProps) => {
-  // Handle cases where content is null or undefined
   if (!content) {
     return null;
   }
 
-  // Handle plain string content
   if (typeof content === 'string') {
     const boldRegex = /\*\*(.*?)\*\*/g;
     const parts = content.split(boldRegex);
-    return <>{parts.map((part, index) => index % 2 === 1 ? <strong key={index}>{part}</strong> : part)}</>;
+    return (<>{parts.map((part, index) => index % 2 === 1 ? <strong key={index}>{part}</strong> : part)}</>);
   }
 
-  // Handle array content (text, image, etc.)
+  // Use the new custom type here
   return (
     <div className="space-y-2">
       {content.map((item, index) => {
-        // Use a switch statement for clean and safe type narrowing
         switch (item.type) {
           case 'text':
             return <p key={index}>{item.text}</p>;
           case 'image_url':
             return <Image key={index} src={item.image_url.url} alt="User attachment" className="mt-2 rounded-lg max-w-xs" width={500} height={500} />;
-          // case 'refusal':
-          //   return <p key={index}>**This content was refused.**</p>; // Or any other handling
+          case 'refusal':
+            // You can add logic here to display a custom refusal message
+            return <p key={index} className="text-red-500">I am unable to process this request.</p>;
           default:
-            return null; // Return null for any unhandled types
+            return null;
         }
       })}
     </div>
