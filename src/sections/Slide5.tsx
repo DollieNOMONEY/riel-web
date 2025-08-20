@@ -1,115 +1,91 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import Image2 from '@/img/pic 2.png'
 
-export default function Slide5() {
+import Container from '@/components/Container'
+
+export default function Slide2() {
   return (
-    <div id="pricing"
-        className='w-full min-h-auto bg-neutral-100 items-center justify-center'>
-
-        <div className="flex flex-col xl:flex-row justify-center xl:gap-[17rem] items-center w-full px-12 pt-16">
-          <div className="max-w-2xl relative">
-            <Image 
-             className="absolute z-0 
-             left-1/2 top-4 sm:top-8 2xl:top-14
-             -translate-x-1/2 -translate-y-1/2
-             max-w-[14rem] 
-             sm:max-w-[20rem] 
-             md:max-w-[25rem]
-             xl:max-w-[25rem]
-             2xl:max-w-[36rem]
-             w-[clamp(63vm, 80vm)]"
-              src={Image2} 
-              alt="Blue Drawn Design"
-            />
-            <h2 className="font-semibold z-10 relative
-                 text-4xl sm:text-6xl md:text-7xl 2xl:text-8xl 
-                text-center whitespace-nowrap
-                ">Pricing Option:
-                {/* xl:whitespace-nowrap xl:overflow-visible bg-amber-50 */}
-            </h2>
-          </div>
-        </div>
-
-
-        <div className='mt-12 xl:pt-0'/>
-
-        
-        <div className="relative flex flex-col xl:flex-row justify-center items-center gap-2 xl:gap-10 w-full px-12 md:px-60 lg:px-80 xl:px-12">
-          <div className="relative xl:max-w-xs 2xl:max-w-md border-2 rounded-2xl px-7 py-4
-          xl:h-[40rem]
-          mb-5 xl:mb-0
-          hover:scale-105 transition-transform">
-            <div className='flex sm:gap-4 flex-col items-start sm:flex-row sm:items-end h-fit mb-5 xl:mb-10'>
-              <p className="text-5xl sm:text-7xl font-semibold mt-4">$30</p>
-              <p className="text-2xl flex items-end font-semibold mt-4 text-neutral-400">+5/month</p>
+    <div id="about" className='w-full bg-[#000000]'>
+        <Container>
+            <div className="items-center xl:items-start w-full px-12 flex
+            flex-col xl:flex-row justify-center
+            xl:gap-24 2xl:gap-72
+            ">
+            <div className="max-w-2xl relative">
+                <div className='mt-24 xl:mt-16 2xl:mt-[8rem]'/>
+                <h1 className="text-white tracking-widest uppercase font-bold
+                text-4xl
+                sm:text-7xl 2xl:text-8xl
+                text-center xl:text-left
+                ">Web Development</h1>
+                
+                <div className='2xl:mt-[23.9rem]'/>
+                <div className='text-center'>
+                <Link className="bg-white px-20 py-5 rounded-full font-bold text-2xl mt-12 xl:mt-0
+                transition-all duration-300 hover:scale-110 active:scale-95 inline-block" 
+                href="#contact">Contact Now</Link>
+                </div>      
+                <div className='mt-0 xl:mt-40 2xl:mt-[11.5rem]'/>
             </div>
-            <p className='xl:mb-2 text-2xl sm:text-4xl font-semibold'>View/Layout</p>
-            <p className="xl:h-24
-            sm:text-2xl   2xl:text-xl mb-12 mt-5 xl:mb-0 xl:mt-8 2xl:mt-0 2xl:mb-0 xl:text-[1.2rem]">
-            Perfect for small businesses, personal brands, or startups looking to have an online presence.</p>
 
-            <li className="sm:text-2xl xl:text-[1.2rem] 2xl:text-xl mb-2 mt-5 xl:mt-8 2xl:mt-0 2xl:mb-1">Home Page Design</li>
-            <li className="sm:text-2xl xl:text-[1.2rem] 2xl:text-xl mb-2 mt-5 xl:mt-2 2xl:mt-0 2xl:mb-1">About Section</li>
-            <li className="sm:text-2xl xl:text-[1.2rem] 2xl:text-xl mb-2 mt-5 xl:mt-2 2xl:mt-0 2xl:mb-1">Contact Info Display</li>
-            <li className="sm:text-2xl xl:text-[1.2rem] 2xl:text-xl mb-2 mt-5 xl:mt-2 2xl:mt-0 2xl:mb-1">Custom Banner or Hero Image</li>
-            <li className="sm:text-2xl xl:text-[1.2rem] 2xl:text-xl mb-2 mt-5 xl:mt-2 2xl:mt-0 2xl:mb-1">Mobile-Friendly Design</li>
-            <li className="sm:text-2xl xl:text-[1.2rem] 2xl:text-xl mb-2 mt-5 xl:mt-2 2xl:mt-0 2xl:mb-1">Speed Optimized</li>
-            <li className="sm:text-2xl xl:text-[1.2rem] 2xl:text-xl mb-12 mt-5 xl:mt-2 2xl:mt-0 2xl:mb-1">Basic SEO Setup</li>
-           
-            <Link className="absolute bottom-5 right-6 inline-block text-sm sm:text-lg underline" href="#details">View Details</Link>
-          </div>
 
-          <div className="relative xl:max-w-xs 2xl:max-w-md border-2 rounded-2xl px-7 py-4 bg-[#38b6ff]
-          xl:h-[40rem]
-          mb-5 xl:mb-0
-          hover:scale-105 transition-transform">
-            <div className='flex gap-4 items-end h-fit mb-5 xl:mb-10'>
-              <p className="text-5xl sm:text-7xl font-semibold mt-4">$200+</p>
+
+
+            <div className="relative max-w-xl xl:max-w-sm 2xl:max-w-2xl flex-shrink-0 mb-12 xl:mb-0 w-full"> 
+
+                <div>
+                  
+                  <div className='mt-24 xl:m-52 2xl:m-[8rem]'/>
+
+                  <div className='border-2 border-white rounded-2xl px-10 py-6 lg:px-20 lg:py-12 relative'>     
+                    
+                    {/* <div className='w-[200px] lg:w-[400px] xl:w-[800px] mx-auto flex-shrink-0 absolute  z-0'>
+                       <Image
+                          className=""
+                          src="/images/layout6.png"
+                          width={1000} height={1000}
+                          alt="Layout 6"
+                        />
+                    </div> */}
+                   
+
+                    <li className="break-words mb-5 text-white relative z-10
+                      sm:text-2xl 2xl:text-3xl ">
+                      Build fast, modern websites with AI-powered tools.
+                    </li>
+
+                    <li className="break-words mb-5 text-white relative z-10
+                      sm:text-2xl 2xl:text-3xl ">
+                      Custom site creation tailored to your brand’s needs.
+                    </li>
+
+                    <li className="break-words mb-5 text-white relative z-10
+                      sm:text-2xl 2xl:text-3xl ">
+                      Launch professional sites without coding experience required.
+                    </li>
+
+                    <li className="break-words mb-5 text-white relative z-10
+                      sm:text-2xl 2xl:text-3xl ">
+                      Optimize performance and design with smart AI insights.
+                    </li>
+
+                    <li className="break-words mb-5 text-white relative z-10
+                      sm:text-2xl 2xl:text-3xl ">
+                      Scale your online presence quickly with intelligent automation.
+                    </li>
+                
+                  </div>
+
+                </div>
+                
+
             </div>
-            <p className='xl:mb-2 text-2xl sm:text-4xl font-semibold'>App Develop</p>
-            <p className="xl:h-24
-            sm:text-2xl   2xl:text-xl mb-12 mt-5 xl:mb-0 xl:mt-8 2xl:mt-0 2xl:mb-0 xl:text-[1.2rem]">
-            Ideal for startups and small businesses looking for an affordable, easy-to-use app to showcase services and engage users.</p>
-
-            <li className="sm:text-2xl xl:text-[1.2rem] 2xl:text-xl mb-2 mt-5 xl:mt-8 2xl:mt-0 2xl:mb-1">Login/Signup System</li>
-            <li className="sm:text-2xl xl:text-[1.2rem] 2xl:text-xl mb-2 mt-5 xl:mt-2 2xl:mt-0 2xl:mb-1">Backend/API system</li>
-            <li className="sm:text-2xl xl:text-[1.2rem] 2xl:text-xl mb-2 mt-5 xl:mt-2 2xl:mt-0 2xl:mb-1">Payment system</li>
-            <li className="sm:text-2xl xl:text-[1.2rem] 2xl:text-xl mb-2 mt-5 xl:mt-2 2xl:mt-0 2xl:mb-1">Admin Dashboard</li>
-            <li className="sm:text-2xl xl:text-[1.2rem] 2xl:text-xl mb-2 mt-5 xl:mt-2 2xl:mt-0 2xl:mb-1">Push Notifications</li>
-            <li className="sm:text-2xl xl:text-[1.2rem] 2xl:text-xl mb-2 mt-5 xl:mt-2 2xl:mt-0 2xl:mb-1">Multilingual Supports</li>
-            <li className="sm:text-2xl xl:text-[1.2rem] 2xl:text-xl mb-2 mt-5 xl:mt-2 2xl:mt-0 2xl:mb-1">Chat / Messaging</li>
-            <li className="sm:text-2xl xl:text-[1.2rem] 2xl:text-xl mb-12 mt-5 xl:mt-2 2xl:mt-0 2xl:mb-1">Store / Orders / Cart</li>
-           
-            <Link className="absolute bottom-5 right-6 inline-block text-sm sm:text-lg underline" href="#details">View Details</Link>
-          </div>
 
 
-          <div className="relative xl:max-w-xs 2xl:max-w-md border-2 rounded-2xl px-7 py-4
-          xl:h-[40rem]
-          mb-5 xl:mb-0
-          hover:scale-105 transition-transform">
-            <div className='flex sm:gap-4 flex-col items-start sm:flex-row sm:items-end h-fit mb-5 xl:mb-10'>
-              <p className="text-5xl sm:text-7xl font-semibold mt-4">$80</p>
-              <p className="text-2xl flex items-end font-semibold mt-4 text-neutral-400">+10/month</p>
+
             </div>
-            <p className='xl:mb-2 text-2xl sm:text-4xl font-semibold'>View/Layout<br className='sm:hidden'/>/Backend</p>
-            <p className="xl:h-24
-            sm:text-2xl   2xl:text-xl mb-12 mt-5 xl:mb-0 xl:mt-8 2xl:mt-0 2xl:mb-0 xl:text-[1.2rem]">
-            Businesses that are scaling up, want to show professionalism, track leads, and have full control of their website content.</p>
-
-            <li className="sm:text-2xl xl:text-[1.2rem] 2xl:text-xl mb-2 mt-5 xl:mt-8 2xl:mt-0 2xl:mb-1">Custom Website Design</li>
-            <li className="sm:text-2xl xl:text-[1.2rem] 2xl:text-xl mb-2 mt-5 xl:mt-2 2xl:mt-0 2xl:mb-1">Full Backend System (CMS)</li>
-            <li className="sm:text-2xl xl:text-[1.2rem] 2xl:text-xl mb-2 mt-5 xl:mt-2 2xl:mt-0 2xl:mb-1">Sales or Client Tracker Dashboard</li>
-            <li className="sm:text-2xl xl:text-[1.2rem] 2xl:text-xl mb-2 mt-5 xl:mt-2 2xl:mt-0 2xl:mb-1">Optional Basic Shop Setup</li>
-            <li className="sm:text-2xl xl:text-[1.2rem] 2xl:text-xl mb-12 mt-5 xl:mt-2 2xl:mt-0 2xl:mb-1">Advanced SEO Setup</li>
-           
-            <Link className="absolute bottom-5 right-6 inline-block text-sm sm:text-lg underline" href="#details">View Details</Link>
-          </div>
-        </div>
-
-        <div className='pt-[4.45rem]'/>
+        </Container>
     </div>
   )
 }

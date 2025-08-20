@@ -3,89 +3,89 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import Container from '@/components/Container'
-import Image1 from '@/img/pic 1.png'
-import Image2 from '@/img/pic 2.png'
-
 
 export default function Slide1() {
   return (
-    <div className='w-full bg-white'>
-        <Container>
-          <div className="
-          p-5 2xl:p-0 
-          mr-0 2xl:mr-28
-          max-w-9xl 2xl:min-w-[600px] 
-          xl:order-2 mb-11">
-            <h1 className="[font-family:var(--font-bebas-neue)] relative top-5 pb-12
-              text-6xl
-              xl:hidden">
-              R<span className='text-blue-500'>IE</span>L WEB
-            </h1>
-            <p className="tracking-widest
-            sm:text-8xl 2xl:text-9xl 
-            mt-12 2xl:mt-48 
-            text-6xl
-            text-center 2xl:text-left [font-family:var(--font-bebas-neue)]
-            ">Simplify</p>
-            <div className='relative'>
-              <p className="relative tracking-widest z-10 mt-3
-              text-6xl sm:text-8xl 2xl:text-9xl 
-              text-center 2xl:text-left [font-family:var(--font-bebas-neue)]
-              ">Succeed</p>
-              <Image 
-             className="absolute  z-0 
-             left-1/2 top-8 2xl:top-14
-             -translate-x-1/2 -translate-y-1/2
-             max-w-[18rem] 
-             sm:max-w-[28rem] 
-             2xl:max-w-[36rem]
-             w-[clamp(63vm, 80vm)]"
-              src={Image2} 
-              alt="Blue Drawn Design"
-              />
-            </div>
-            <p className="font-bold pt-10 pb-16 break-words
-              px-2 2xl:px-0 
-              sm:text-2xl 2xl:text-xl 
-              lg:whitespace-nowrap lg:overflow-visible
-              text-center 2xl:text-left
-              ">
-              Empowering your business with smart solutions.
-            </p>
-            <div className='flex gap-5 text-center 2xl:text-left mb-15 2xl:mb-0'>
-              <Link 
-              style={{ backgroundColor: "#127ddd" }} 
-              className="bg-blue-500 px-6 py-3 rounded-full font-extrabold" 
-              href="#about">More Information
-              </Link>
-              <Link 
-              className="px-6 py-3 rounded-full font-extrabold outline-2 outline-[#127ddd]" 
-              href="/ai/app">Open Chat
-              </Link>
-            </div>
-            
-            <div className='2xl:mt-[17rem]'/>
-          </div>
-
-          <div className="max-w-2xl flex-shrink-0 
-            xl:min-w-[600px] 
-            xl:order-1">
-            <h1 className="[font-family:var(--font-bebas-neue)] relative
-              xl:-bottom-12 2xl:bottom-18 
-              xl:left-12 2xl:left-28
-              text-6xl
-              hidden xl:block">
-              R<span className='text-blue-500'>IE</span>LS WEB
-            </h1>
-            <Image
-              className="w-full mx-auto
-              w-[clamp(16rem, 60vw, 40rem)]
-              2xl:ml-24"
-              src={Image1} 
-              alt="Two people chit-chatting"
-            />
-          </div>
-        </Container>
+    <div className='w-full bg-black relative'>
+      <Image
+        src="/images/background/background1.png"
+        alt="Layout 1 Background"
+        className="absolute inset-0 w-full h-full object-cover brightness-[25%] contrast-125 z-0"
+        width={1920}
+        height={1080}
+      />
+      <div className='absolute bottom-0 left-0 z-10 w-[200px] lg:w-[400px] xl:w-[800px]'>
+        <Image
+          src="/images/layout1.png"
+          alt="Layout 1 Floating"
+          width={800}
+          height={800}
+        />
       </div>
+      <Container>
+        <div className="flex flex-col relative z-20
+          p-5 2xl:p-0
+          mr-0 2xl:mr-28
+          max-w-9xl 2xl:min-w-[600px]
+          xl:order-2">
+          {/* Mobile-first approach: Riels title for small screens */}
+          <h1 className="relative top-5 pb-12 lg:pb-12 text-white
+            text-6xl
+            xl:hidden">
+            RIELS
+          </h1>
+          <div className='relative'>
+            <h1 className="text-white
+              sm:text-8xl xl:text-7xl 2xl:text-9xl
+              mt-8 2xl:mt-48
+              text-4xl
+              text-center xl:text-left
+              ">RIELS UPDATE:</h1>
+            <div className='lg:flex items-end gap-5 mb-12'>
+              <h1 className="text-white
+                sm:text-8xl 2xl:text-9xl
+                text-4xl
+                text-center 2xl:text-left
+                ">
+                GPT 5
+              </h1>
+              <p className="font-bold break-words text-white uppercase mb-5
+                px-2 2xl:px-0
+                text-xs sm:text-2xl 2xl:text-xl
+                lg:whitespace-nowrap lg:overflow-visible
+                text-center 2xl:text-left
+                ">
+                Powered by OpenAI
+              </p>
+            </div>
+          </div>
+          <div className='flex flex-col sm:flex-row gap-5 text-center 2xl:text-left mb-64 2xl:mb-0'>
+            <p className="relative tracking-widest z-10 mt-3 text-white uppercase
+              text-xl sm:text-xl 2xl:text-2xl
+              text-center 2xl:text-left
+              ">August 2025</p>
+            <Link
+              className="px-6 py-3 rounded-full font-extrabold outline-2 outline-[#127ddd] text-white
+              transition-all duration-300 hover:bg-[#127ddd] hover:text-black hover:scale-105 active:scale-95
+              mt-4 sm:mt-0"
+              href="/ai/app">Open Chat
+            </Link>
+          </div>
+          <div className='2xl:mt-[17.8rem]'/>
+        </div>
+
+        <div className="max-w-2xl flex-shrink-0
+          xl:min-w-[600px]
+          xl:order-1">
+          <h1 className="relative text-white
+            xl:bottom-[14rem] 2xl:bottom-[23rem]
+            xl:left-28 2xl:left-32
+            text-6xl
+            hidden xl:block">
+            RIELS
+          </h1>
+        </div>
+      </Container>
+    </div>
   )
 }

@@ -5,6 +5,8 @@ import { type ChatMessage } from '@/app/lib/definitions';
 import { useSession, signOut as nextAuthSignOut } from 'next-auth/react';
 import { signOutAction, getAIResponse } from '@/app/lib/actions';
 import Link from 'next/link';
+// import { getAIResponse, type ChatMessage } from '@/app/actions';
+import Navigation from '@/components/Navigation';
 
 // --- SVG Icon Components (Keep them as they are) ---
 const PaperClipIcon = (props: React.SVGProps<SVGSVGElement>) => (
@@ -123,7 +125,7 @@ export default function RielAIPage() {
 
   return (
     <div className="flex flex-col h-dvh bg-white font-sans">
-        <header className="p-4 border-b flex justify-between items-center max-w-4xl mx-auto w-full">
+        {/* <header className="p-4 border-b flex justify-between items-center max-w-4xl mx-auto w-full">
             <h1 className="[font-family:var(--font-bebas-neue)] font-bold text-3xl">
               R<span className='text-blue-500'>IE</span>L WEB
             </h1>
@@ -141,17 +143,14 @@ export default function RielAIPage() {
               )}
               {status === 'unauthenticated' && <Link href="/login" className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm hover:bg-blue-700">Sign In</Link>}
             </div>
-        </header>
+        </header> */}
 
+      <Navigation/>
       <div ref={chatContainerRef} className="flex-1 overflow-y-auto p-6 space-y-4 w-full max-w-4xl mx-auto">
         {messages.length === 0 ? (
-          <div className="flex h-full items-center justify-center">
-            <h1 className="text-5xl font-bold text-blue-600">
-              {status === 'loading' && 'Loading...'}
-              {status === 'authenticated' && `Sursdey, ${session?.user?.name}!`}
-              {status === 'unauthenticated' && 'Sursdey!'}
-            </h1>
-          </div>
+           <div className="flex h-full items-center justify-center">
+            <h1 className="text-7xl font-bold text-blue-600">Sursdey!</h1>
+           </div>
         ) : (
           messages.map((msg, index) => (
             <div key={index} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
