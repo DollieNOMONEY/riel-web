@@ -1,33 +1,25 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Bebas_Neue, Montserrat} from "next/font/google";
+import localFont from 'next/font/local';
 import "./globals.css";
-
-const bebasNeue = Bebas_Neue({
-  variable: "--font-bebas-neue",
-  subsets: ["latin"],
-  weight: "400",
-});
-
-const montserrat = Montserrat({
-  variable: "--font-montserrat",
-  subsets: ["latin"],
-  weight: ["600", "800"],
-});
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Riel Web App",
   description: "Portfolio website for Riel",
 };
+
+const telegraf = localFont({
+  src: '../../public/fonts/Telegraf-Regular.woff',
+  variable: '--font-telegraf',
+  display: 'swap',
+});
+
+const glacialIndifference = localFont({
+  src: '../../public/fonts/GlacialIndifference-Regular.woff2',
+  variable: '--font-glacial-indifference',
+  display: 'swap',
+});
+
+
 
 export default function RootLayout({
   children,
@@ -37,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${montserrat.variable} ${geistMono.variable} ${bebasNeue.variable} antialiased overflow-x-hidden`}
+        className={`${telegraf.variable} ${glacialIndifference.variable} antialiased overflow-x-hidden`}
       >
         {children}
       </body>
